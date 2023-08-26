@@ -4,7 +4,7 @@ import Quotes from './pages/Quotes';
 function App() {
   return (
     <div className="App">
-      <h1>starting...</h1>
+      <h1>Gadgets Box</h1>
       <Quotes />
     </div>
   );
