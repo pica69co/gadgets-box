@@ -15,6 +15,7 @@ const { REACT_APP_API_KEY, REACT_APP_API_URL} = process.env
 
 const Weather = () => {
     const [city, setCity] = useState('')
+    const [error, setError] = useState(false)
     const [detail, setDetail] = useState(
         {
             city:'',
@@ -27,19 +28,27 @@ const Weather = () => {
   const API_URL=REACT_APP_API_URL  
    
   const fetchWeather = async (city) => {
-    const searchCity = city || 'bangalore'
-    const response = await fetch(`${API_URL}${searchCity}&appid=${API_KEY}`)
-    const data = await response.json()
-    setDetail(
-        {...detail, 
-        city:data?.name, 
-        temperature:data?.main.temp, 
-        humidity:data?.main.humidity, 
-        wind:data?.wind.speed,
-        conditions:data?.weather[0].main,
-        }
-        )
+    try {
+        
+        const searchCity = city || 'bangalore'
+        
+        const response = await fetch(`${API_URL}${searchCity}&appid=${API_KEY}`)
+        const data = await response.json()
+        setDetail(
+            {...detail, 
+            city:data?.name, 
+            temperature:data?.main.temp, 
+            humidity:data?.main.humidity, 
+            wind:data?.wind.speed,
+            conditions:data?.weather[0].main,
+            }
+            )
+        setError(false)    
+    } catch (error) {
+        setError(true)
+    }
   }
+
   useEffect(() => {
     fetchWeather(city)
   }, [])
@@ -63,6 +72,7 @@ const Weather = () => {
                 onClick={hangleClick}
                 ><img src={search} alt='search-icon'/></button>
             </div>
+            {error && <p style={{color:'red', background:'#e5befff', width:'fit-content', justifyContent:'center'}}>Uppss! Something went wrong, Try again!</p>}
             <div className={detail.length ? style.weather : style.weather1} >
                 
                 <img src={ 
