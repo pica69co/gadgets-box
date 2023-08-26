@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+
 import style from '../components/Weather.module.css'
 import search from '../assets/images/search.png'
 import rain from '../assets/images/rain.png'
@@ -10,6 +11,8 @@ import mist from '../assets/images/mist.png'
 import snow from '../assets/images/snow.png'
 import clear from '../assets/images/clear.png'
 
+const { REACT_APP_API_KEY, REACT_APP_API_URL} = process.env
+
 const Weather = () => {
     const [city, setCity] = useState('')
     const [detail, setDetail] = useState(
@@ -20,12 +23,12 @@ const Weather = () => {
             wind:0,    
         })
     
-    
-    const api_url = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=' 
-    const api_key = '121da11cb91301890aee7bbf0ef806b3'
+  const API_KEY=REACT_APP_API_KEY
+  const API_URL=REACT_APP_API_URL  
+   
   const fetchWeather = async (city) => {
     const searchCity = city || 'bangalore'
-    const response = await fetch(`${api_url}${searchCity}&appid=${api_key}`)
+    const response = await fetch(`${API_URL}${searchCity}&appid=${API_KEY}`)
     const data = await response.json()
     setDetail(
         {...detail, 
