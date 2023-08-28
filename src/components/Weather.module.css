@@ -1,7 +1,7 @@
 .container{
     font-family: 'Poppins', 'sans-serif';
     box-sizing: border-box;
-    background: #222;
+    /* background: #222; */
 }
 .card{
     width: 90%;
