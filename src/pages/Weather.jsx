@@ -101,7 +101,7 @@ const Weather = () => {
           </p>
         )}
 
-        {city | !error && (
+        {detail.city | !error && (
           <div className={detail.length ? style.weather : style.weather1}>
             <img
               src={

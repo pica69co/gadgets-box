@@ -29,7 +29,7 @@ const forecast = ({ data, loading }) => {
       <label className="title">Daily</label>
       {loading && <p>Loading...</p>}
       <Accordion allowZeroExpanded>
-        {data?.list.splice(0, 7).map((item, index) => (
+        {data?.list.slice(0, 7).map((item, index) => (
           <AccordionItem key={index}>
             <AccordionItemHeading>
               <AccordionItemButton>
