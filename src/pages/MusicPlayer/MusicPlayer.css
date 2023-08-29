@@ -162,3 +162,7 @@ body{
 .objectFitContain{
     object-fit: contain;
 }
+.headphone{
+    width: 30px;
+    padding: 15px;
+}
