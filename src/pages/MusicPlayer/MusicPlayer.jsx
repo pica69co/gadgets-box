@@ -142,19 +142,21 @@ function MusicPlayer() {
         <p className='music-Head-Name'>{currentMusicDetails.songName}</p>
         <p className='music-Artist-Name'>{currentMusicDetails.songArtist}</p>
         <img src={currentMusicDetails.songAvatar} className={avatarClass[avatarClassIndex]} onClick={handleAvatar} alt="song Avatar" id='songAvatar'/>
-        <div className="musicTimerDiv">
-          <p className='musicCurrentTime'>{musicCurrentTime}</p>
-          <p className='musicTotalLength'>{musicTotalLength}</p>
-        </div>
-        <input type="range" name="musicProgressBar" className='musicProgressBar' value={audioProgress} onChange={handleMusicProgressBar} />
+        
+        
         <div className="musicControllers">
           <i className='fa-solid fa-backward musicController' onClick={handlePrevSong}></i>
           <i className={`fa-solid ${isAudioPlaying? 'fa-pause-circle' : 'fa-circle-play'} playBtn`} onClick={handleAudioPlay}></i>
           <i className='fa-solid fa-forward musicController' onClick={handleNextSong}></i>
         </div>
+        <div className="musicTimerDiv">
+          <p className='musicCurrentTime'>{musicCurrentTime}</p>
+          <p className='musicTotalLength'>{musicTotalLength}</p>
+        </div>
+        <input type="range" name="musicProgressBar" className='musicProgressBar' value={audioProgress} onChange={handleMusicProgressBar} />
       </div>
       <div className="changeBackBtn" onClick={handleChangeBackground}>
-        Change Background
+        
       </div>
     </div>
     </>
