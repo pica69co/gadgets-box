@@ -23,17 +23,34 @@ body{
     font-family: 'Poppins';   
 }
 
-.backgroundVideo{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    object-fit: cover;
-    height: 100vh;
-    z-index: -1;
-    filter: saturate(2.5);
+.background1{
+    background: rgb(11,94,215);
+    background: linear-gradient(201deg, rgba(11,94,215,0.20630258939513302) 0%, rgba(11,94,215,0.4920168751094187) 22%, rgba(11,94,215,0.7497199563419117) 88%); 
 }
-
+.background2{
+    background: rgb(215,11,57);
+    background: linear-gradient(201deg, rgba(215,11,57,0.20630258939513302) 0%, rgba(215,11,91,0.4920168751094187) 34%, rgba(215,11,196,0.7497199563419117) 93%); 
+}
+.background3{
+    background: rgb(215,11,174);
+    background: linear-gradient(201deg, rgba(215,11,174,0.20630258939513302) 0%, rgba(11,43,215,0.4920168751094187) 66%, rgba(102,11,215,0.7497199563419117) 93%); 
+}
+.background4{
+    background: rgb(11,215,26);
+    background: linear-gradient(201deg, rgba(11,215,26,0.20630258939513302) 0%, rgba(11,215,109,0.4920168751094187) 52%, rgba(127,215,11,0.7497199563419117) 98%); 
+}
+.background5{
+    background: rgb(215,11,27);
+    background: linear-gradient(201deg, rgba(215,11,27,0.20630258939513302) 0%, rgba(215,40,11,0.4920168751094187) 52%, rgba(215,145,11,0.7497199563419117) 98%); 
+}
+.background6{
+    background: rgb(191,215,11);
+    background: linear-gradient(201deg, rgba(191,215,11,0.20630258939513302) 0%, rgba(215,209,11,0.4920168751094187) 46%, rgba(215,145,11,0.7497199563419117) 93%); 
+}
+.background7{
+    background: rgb(215,11,174);
+    background: linear-gradient(201deg, rgba(215,11,174,0.20630258939513302) 0%, rgba(178,11,215,0.4920168751094187) 66%, rgba(102,11,215,0.7497199563419117) 93%); 
+}
 .blackScreen{
     width: 100vw;
     height: 100vh;

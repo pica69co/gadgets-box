@@ -119,7 +119,7 @@ function MusicPlayer() {
   }
 
 
-  const vidArray = ['./assets/videos/video1.mp4','./Assets/Videos/video2.mp4','./Assets/Videos/video3.mp4','./Assets/Videos/video4.mp4','./Assets/Videos/video5.mp4','./Assets/Videos/video6.mp4'];
+  const vidArray = ['background1','background2','background3','background4','background5','background6','background7'];
 
   const handleChangeBackground = ()=>{
     if (videoIndex >= vidArray.length - 1) {
@@ -132,10 +132,10 @@ function MusicPlayer() {
 
   return (
     <>
-    <div className="container">
+    <div className={`${vidArray[videoIndex]} container` } >
       <audio src='./assets/audio/Chasing - NEFFEX.mp3' ref={currentAudio} onEnded={handleNextSong} onTimeUpdate={handleAudioUpdate}></audio>
-      <video src={vidArray[videoIndex]} loop muted autoPlay className='backgroundVideo'></video>
-      <div className="blackScreen"></div>
+      
+      <div className={`'${vidArray[videoIndex]}'`}></div>
       <div className="music-Container">
         <p className='musicPlayer'>Music Player 
           <img src='./icons/head.svg' alt='headphone-icon' className='headphone'/></p>
