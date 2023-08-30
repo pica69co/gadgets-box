@@ -1,6 +1,6 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-// import NewYear from './pages/NewYear/NewYear';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+
 import OtherNewYear from './pages/OtherNewYear/OtherNewYear.jsx';
 import MusicPlayer from './pages/MusicPlayer/MusicPlayer';
 import Quotes from './pages/Quotes';
@@ -11,8 +11,9 @@ function App() {
     <Router>
 
     <div className="App">
-     
+     <Link to='/'>     
       <h1>Gadgets Box</h1>
+     </Link>
       <Routes> 
       <Route path='/' element={<Home />}> </Route>
       <Route path='/quotes' element={<Quotes/>}> </Route>
