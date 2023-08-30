@@ -1,5 +1,7 @@
 import './App.css';
-import MusicPlayer from './pages/MusicPlayer/MusicPlayer';
+// import NewYear from './pages/NewYear/NewYear';
+import OtherNewYear from './pages/OtherNewYear/OtherNewYear.jsx';
+// import MusicPlayer from './pages/MusicPlayer/MusicPlayer';
 // import Quotes from './pages/Quotes';
 // import Weather from './pages/Weather';
 
@@ -9,7 +11,9 @@ function App() {
       <h1>Gadgets Box</h1>
       {/* <Quotes /> */}
       {/* <Weather /> */}
-      <MusicPlayer />
+      {/* <MusicPlayer /> */}
+       {/* <NewYear /> */}
+       <OtherNewYear />
     </div>
   );
 }
