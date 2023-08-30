@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import './OtherNewYear.css'
+
+
 const CountdownTimer = () => {
   const christmasDate = new Date("December 25, 2023 00:00:00").getTime();
   const newYearDate = new Date("January 1, 2024 00:00:00").getTime();
+  const year = new Date().getFullYear();
+  const month = new Date().getUTCMonth()+1;
+  const day = new Date().getDate();
 
   const [timeRemaining, setTimeRemaining] = useState({
     days: 0,
@@ -91,7 +96,7 @@ const CountdownTimer = () => {
         <span className="label">{' '} Seconds</span>
       </div>)}
       </div>
-
+       <p>&copy;{' '}{`${year}/${month}/${day}`}</p>     
     </div>
   );
 };
