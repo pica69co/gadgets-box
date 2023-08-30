@@ -21,7 +21,12 @@ const Links = [
   {
     name: 'Random Daily Quotes',
     path: '/quotes',
+  },
+  {
+    name: 'Pocket Games',
+    path: '/games',
   }
+
 ]
 
 const Home = () => {
@@ -33,6 +38,7 @@ const Home = () => {
             </div>
             )) 
             }
+            
         </div>
     )
 }

@@ -1,12 +1,14 @@
 .container-home{ 
     width: auto;
-    background: #5edf3475;
+    height: 100vh;
+    background: #5edf3422;
     display: flex;
     justify-content: space-around;
+    
 }
  
  .link-container{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     
 }
 .link{

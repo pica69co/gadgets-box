@@ -6,6 +6,7 @@ import MusicPlayer from './pages/MusicPlayer/MusicPlayer';
 import Quotes from './pages/Quotes';
 import Weather from './pages/Weather';
 import Home from './pages/Home/Home';
+import PocketGames from './pages/PocketGames/PocketGames';
 function App() {
   return (
     <Router>
@@ -20,6 +21,8 @@ function App() {
       <Route path='/weather' element={<Weather />}> </Route>
       <Route path='/music' element={<MusicPlayer />}> </Route>
       <Route path='/countdown' element={<OtherNewYear />}> </Route>
+      <Route path='/games' element={<PocketGames/>}> </Route>
+      
       </Routes>
            
     
