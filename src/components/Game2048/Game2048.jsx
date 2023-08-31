@@ -6,7 +6,7 @@ export const Game2048 = () => {
     <div className="header">
         <div>
           <h1>Play 2048</h1>
-          <p>Under constrution..</p>
+          <p>Under construction..</p>
         </div>
         
     </div>
