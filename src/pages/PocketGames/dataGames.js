@@ -1,45 +1,46 @@
- const Games = [
+
+const Games = [
     {
       name:'Hunt The Ace',
-      url: '',
+      url: 'https://the-ace-hunt-js-game.vercel.app/',
       imageUrl: '',
       repo: '',
       video: '',
     },
     {
       name:'Tic-Tac-Toe',
-      url: '',
+      url: '/tic-tac',
       imageUrl: '',
       repo: '',
       video: '',
     },
     {
       name:'Memory Game',
-      url: '',
+      url: '/memory',
       imageUrl: '',
       repo: '',
       video: '',
     },
     {
-      name:'Invaders Game',
-      url: '',
+      name:'Tetris',
+      url: '/tetris',
       imageUrl: '',
       repo: '',
       video: '',
     },
     {
       name:'2048',
-      url: '',
+      url: '/2048',
       imageUrl: '',
       repo: '',
       video: '',
     },
-    {
-      name:'?',
-      url: '',
-      imageUrl: '',
-      repo: '',
-      video: '',
-    },
+    // {
+    //   name:'',
+    //   url: '',
+    //   imageUrl: '',
+    //   repo: '',
+    //   video: '',
+    // },
   ]
   export default Games

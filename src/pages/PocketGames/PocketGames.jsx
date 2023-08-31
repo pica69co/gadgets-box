@@ -3,12 +3,8 @@ import "./PocketGames.css";
 import games from "./dataGames";
 
 const PocketGames = () => {
-  const handleClickGame = () => {
-    window.open(
-      `https://the-ace-hunt-js-game.vercel.app/`,
-      "Hunt The Ace Window",
-      "width=800, height=900"
-    );
+  const handleClickGame = (url) => {
+    window.open(`${url}`, "Hunt The Ace Window", "width=800, height=900");
   };
 
   return (
@@ -19,7 +15,11 @@ const PocketGames = () => {
       <div className="hunt">
         {games.map((game) => (
           <ul key={game.name} className="list-group">
-            <li className="list-item" type="submit" onClick={handleClickGame}>
+            <li
+              className="list-item"
+              type="submit"
+              onClick={() => handleClickGame(game.url)}
+            >
               {game.name}
             </li>
           </ul>

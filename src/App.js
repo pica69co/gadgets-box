@@ -7,6 +7,10 @@ import Quotes from './pages/Quotes';
 import Weather from './pages/Weather';
 import Home from './pages/Home/Home';
 import PocketGames from './pages/PocketGames/PocketGames';
+import { Game2048 } from './components/Game2048/Game2048';
+import TicTac from './components/Tic-Tac/Tic-Tac';
+import MemoryGame from './components/MemoryGame/MemoryGame';
+import Tetris from './components/Tetris/Tetris';
 function App() {
   return (
     <Router>
@@ -22,7 +26,10 @@ function App() {
       <Route path='/music' element={<MusicPlayer />}> </Route>
       <Route path='/countdown' element={<OtherNewYear />}> </Route>
       <Route path='/games' element={<PocketGames/>}> </Route>
-      
+      <Route path='/2048' element={<Game2048/>}> </Route>
+      <Route path='/tic-tac' element={<TicTac />}> </Route>
+      <Route path='/memory' element={<MemoryGame/>}> </Route>
+      <Route path='/tetris' element={<Tetris/>}> </Route>
       </Routes>
            
     
