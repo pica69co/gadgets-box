@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { CATEGORIES, PACE } from '../constants.js'
-import RadioBox  from '../RadioBox/RadioBox.jsx'
+
+import { CATEGORIES, INITIAL_CARDS_COUNT, PACE } from '../constants.js'
+
+import RadioBox  from '../RadioBox/'
+import Counter from '../Counter/';
 
 import styles from './Settings.module.css';
 
-const Settings = () => {
+const Settings = ({ startGame }) => {
   const [category, setCategory] = useState(CATEGORIES[0])
   const [pace, setPace] = useState(PACE[0])
+  const [cardsCount, setCardsCount] = useState(INITIAL_CARDS_COUNT)
+
+  const onStartGame = () => {
+     startGame({category, pace, cardsCount})
+  }
     return (
       <div className={`${styles.settings} frosted`}>
         <h2>Settings</h2>
@@ -22,6 +30,15 @@ const Settings = () => {
             />
          ))}
          </div>
+         
+         <h4>Amount Of Cards:</h4>
+         <div className={`${styles.setting}`}>
+            <Counter 
+              cardsCount={cardsCount}
+              onClick={setCardsCount}
+              /> 
+         </div>   
+
          <h4>Pace:</h4>
          <div className={`${styles.setting}`}>
          {PACE.map(item => (
@@ -33,9 +50,16 @@ const Settings = () => {
             />
          ))}
          </div>
+         
+         <button className={`${styles.button} frosted`} onClick={onStartGame}>Start
+         </button>
      </div>
     
     )
 };
 
 export default Settings;
+
+Settings.propTypes = {
+  startGame: PropTypes.func.isRequired,
+}
