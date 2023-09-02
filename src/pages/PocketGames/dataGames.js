@@ -16,7 +16,7 @@ const Games = [
     },
     {
       name:'Memory Game',
-      url: '/memory',
+      url: 'https://memory-game-cyan-two.vercel.app/',
       imageUrl: '',
       repoUrl: '',
       videoUrl: '',

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Home.css'
+import Background from '../../components/MemoryGame/Background'
 
 const Links = [
 //    {
@@ -38,7 +39,7 @@ const Home = () => {
             </div>
             )) 
             }
-            
+          <Background />  
         </div>
     )
 }

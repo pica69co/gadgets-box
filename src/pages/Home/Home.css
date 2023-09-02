@@ -1,12 +1,9 @@
 .container-home{ 
     width: auto;
     height: 100vh;
-    background: #5edf3422;
     display: flex;
     justify-content: space-around;
-    
 }
- 
  .link-container{
     font-size: 1.3rem;
     

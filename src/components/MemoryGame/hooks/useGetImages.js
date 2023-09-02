@@ -1,41 +1,40 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
-const BASE_URL = 'https://api.pexels.com/v1/search';
-const getRandomPage = () => Math.round(Math.random()*(10-1)+1)
+const getRandomPage = () => Math.round(Math.random() * (10 - 1) + 1);
 
 const useGetImages = gameOptions => {
-    const [images, setImages] = useState([])
-        
+    const [images, setImages] = useState([]);
+
     const buildUrl = () => {
-        let url = new URL(BASE_URL)
-        
+        let url = new URL('https://api.pexels.com/v1/search');
+
         url.search = new URLSearchParams({
-          query: gameOptions.category,
-          orientation: 'square',
-          size: 'small',
-          per_page: gameOptions.cardsCount / 2,
-          page: getRandomPage(),
-        })
+            query: gameOptions.category,
+            orientation: 'square',
+            size: 'small',
+            per_page: gameOptions.cardsCount / 2,
+            page: getRandomPage(),
+        });
+
         return url;
-      }
-      const fetchPics = ()=>{
+    };
 
-          fetch(buildUrl(), {
+    const fetchPics = () => {
+        fetch(buildUrl(), {
             headers: {
-              Authorization: process.env.REACT_APP_AUTH_KEY,
+                Authorization: process.env.REACT_APP_AUTH_KEY,
             },
-          }).then(data=>data.json())
-          .then(data=>setImages(data.photos))
+        })
+            .then(data => data.json())
+            .then(data => setImages(data.photos));
+    };
 
-      }
+    useEffect(() => {
+        if (!gameOptions) return;
+        fetchPics();
+    }, [gameOptions]);
 
-      useEffect(()=>{
-        if(!gameOptions) return
-        fetchPics()
-        
-      },[gameOptions])
-      
-    return images  
+    return images;
 };
 
 export default useGetImages;

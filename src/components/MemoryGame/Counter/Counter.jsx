@@ -15,7 +15,7 @@ const Counter = ({ cardsCount, onClick }) => {
     const increment = (e) => {
         e.preventDefault()
         const number = cardsCount + STEP 
-        if(number <= 180)  onClick(number) 
+        if(number <= 160)  onClick(number) 
     }
     
     return ( 

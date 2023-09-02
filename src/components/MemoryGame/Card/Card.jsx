@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Card.module.css';
 import Image from '../Image/Image';
+
+import styles from './Card.module.css';
 
 const Card = ({ card, onCardClick }) => {
     const onClick = () => {

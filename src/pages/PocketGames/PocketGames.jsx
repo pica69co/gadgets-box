@@ -1,6 +1,7 @@
 import React from "react";
 import "./PocketGames.css";
 import games from "./dataGames";
+import Background from "../../components/MemoryGame/Background";
 
 const PocketGames = () => {
   const handleClickGame = (url) => {
@@ -19,12 +20,13 @@ const PocketGames = () => {
               className="list-item"
               type="submit"
               onClick={() => handleClickGame(game.url)}
-            >
+              >
               {game.name}
             </li>
           </ul>
         ))}
       </div>
+    <Background/>
     </div>
   );
 };

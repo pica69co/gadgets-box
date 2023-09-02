@@ -1,25 +1,31 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 import Background from './Background/'
-import Settings from './Settings/'
 import Board from './Board/'
+import Settings from './Settings/'
 
 const MemoryGame = () => {
   const [gameOptions, setGameOptions] = useState(null)
   
 
   const startGame = (options) => {
-    console.log('options',options);
     setGameOptions(options)
+  }
+
+  const restartGame = ()=> {
+    setGameOptions(null)
   }
   
   return (
-    <div >
-      <h1>Play Memory Game</h1>
-     <Background />
-     {!gameOptions ? <Settings startGame={startGame}/> : <Board gameOptions={gameOptions}/>}
-    
-    </div>
+    <>
+            <Background />
+            <h1>Memory Game</h1>
+            {!gameOptions ? (
+                <Settings startGame={startGame} />
+            ) : (
+                <Board gameOptions={gameOptions} restartGame={restartGame} />
+            )}
+        </>
   )
 }
 
