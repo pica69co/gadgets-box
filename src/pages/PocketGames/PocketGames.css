@@ -1,14 +1,15 @@
 .title{
-
+  font-size: 1.3rem;
+  color: lightgray;
 }
 .hunt{
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
+  
 }
 
 .list-item{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   cursor: pointer;    
 }
 .list-item{

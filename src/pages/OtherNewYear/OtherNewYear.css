@@ -7,10 +7,11 @@
     color: #fff;
 }
 .time-unit{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 
 }
 .time-unit h1{
+    font-size: 1.5rem;
     border-radius: 5px;
     background: rgb(22,11,203);
     background: linear-gradient(90deg, rgba(22,11,203,1) 20%, rgba(121,9,12,0.7525210767900911) 47%, rgba(0,212,255,1) 94%); 
@@ -26,13 +27,11 @@
   border: 5px solid #fff;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin: 30px;
+  padding: 10px;
+  margin: 17px;
   box-shadow: 20px -3px 80px 1px rgba(52,176,87,0.75);
 -webkit-box-shadow: 20px -3px 80px 1px rgba(52,176,87,0.75);
 -moz-box-shadow: 20px -3px 80px 1px rgba(52,176,87,0.75);
-
-
 }
 .year{
 

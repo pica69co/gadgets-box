@@ -144,11 +144,16 @@ const Weather = () => {
             </div>
           </div>
         )}
-      </div>
+      
+      
 
+      </div>
+      <div className="daily">
       {detail.city && forecast && !error && (
         <Forecast data={forecast} loading={loading} />
       )}
+      </div>       
+      
     </div>
   );
 };
