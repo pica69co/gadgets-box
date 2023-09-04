@@ -16,9 +16,12 @@ function App() {
     <Router>
 
     <div className="App">
-     <Link to='/'>     
-      <h1>Gadgets Box</h1>
-     </Link>
+     <div className='title'>
+      <Link to='/' style={{textDecoration:'none'}}>     
+        <h1>Gadgets Box</h1>
+      </Link>
+    </div>
+     
       <Routes> 
       <Route path='/' element={<Home />}> </Route>
       <Route path='/quotes' element={<Quotes/>}> </Route>

@@ -1,14 +1,14 @@
 .container-home{ 
     width: auto;
-    height: 100vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    
 }
  .link-container{
     font-size: 1.3rem;
-    
+        
 }
 .link{
     text-decoration: none;
-    padding: 15px;
+    padding: 5px;
 }
