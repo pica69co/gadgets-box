@@ -7,7 +7,7 @@ import Quotes from './pages/Quotes';
 import Weather from './pages/Weather';
 import Home from './pages/Home/Home';
 import PocketGames from './pages/PocketGames/PocketGames';
-import { Game2048 } from './components/Game2048/Game2048';
+import  Game2048  from './components/Game2048/Game2048';
 import TicTac from './components/Tic-Tac/Tic-Tac';
 import MemoryGame from './components/MemoryGame/MemoryGame';
 import Tetris from './components/Tetris/Tetris';
