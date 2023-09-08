@@ -1,4 +1,4 @@
-import { Block, SHAPES } from '../types';
+import { SHAPES } from '../types';
 
 
 function UpcomingBlocks({ upcomingBlocks }) {

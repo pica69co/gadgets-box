@@ -3,7 +3,7 @@
     grid-template-areas:
       ". title ."
       ". game controls";
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
   }
   
   .tetris-app > h1 {
@@ -12,11 +12,15 @@
   }
   
   .controls > button {
-    padding: 4px;
+    padding: 10px;
+    border-radius: 3px;
+    background: chocolate;
+    color: azure;
+    font-weight: 700;
   }
   
   .board {
-    border: 2px solid black;
+    border: 20px double #333;
     user-select: none;
     margin: auto;
     grid-area: game;
@@ -40,7 +44,9 @@
   .cell {
     width: 30px;
     aspect-ratio: 1;
-    border: 1px solid black;
+    border: 1px solid #333;
+    border-radius: 0;
+     
   }
   
   .cell.hidden {

@@ -1,5 +1,4 @@
 import Cell from './Cell';
-// import { BoardShape } from '../types';
 
 function Board({ currentBoard }) {
   return (
