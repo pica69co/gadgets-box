@@ -4,11 +4,13 @@
       ". title ."
       ". game controls";
     grid-template-columns: repeat(3,1fr);
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/26/09/42/road-sign-1280257_960_720.jpg');
   }
   
   .tetris-app > h1 {
     text-align: center;
     grid-area: title;
+    background: whitesmoke;
   }
   
   .controls > button {
@@ -17,6 +19,7 @@
     background: chocolate;
     color: azure;
     font-weight: 700;
+    
   }
   
   .board {
@@ -28,6 +31,7 @@
   
   .controls {
     grid-area: controls;
+    background: whitesmoke;
   }
   
   .row {
@@ -42,13 +46,13 @@
   }
   
   .cell {
-    width: 30px;
+    width: 25px;
     aspect-ratio: 1;
     border: 1px solid #333;
     border-radius: 0;
      
   }
-  
+    
   .cell.hidden {
     visibility: hidden;
   }

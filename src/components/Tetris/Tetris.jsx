@@ -17,6 +17,7 @@ const Tetris = () => {
   return (
     <div className="tetris-app">
       <h1>Tetris</h1>
+      
       <Board currentBoard={board} />
       <div className="controls">
         <h2>Score: {score}</h2>
@@ -25,7 +26,10 @@ const Tetris = () => {
           ) : (
             <button onClick={startGame}>New Game</button>
             )}
+      <h5>credits: Conner Ardman</h5>
+      <p>&copy;2023 Oscar Warrieta</p>
       </div>
+      
     </div>
   );
 }
