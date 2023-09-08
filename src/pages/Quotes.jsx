@@ -30,7 +30,9 @@ const Quotes = () => {
    const handlerSound = () => {
     const voices = speechSynthesis.getVoices()
     let utterance = new SpeechSynthesisUtterance(`${quote},  ${author}` )
-    utterance.voice = voices[3] || voices[1]          
+    utterance.voice = voices[3]          
+    let voiceName = utterance.voice?.name
+    console.log('voz',voiceName);
     // utterance.rate = 0.9
     speechSynthesis.speak(utterance)
    }
@@ -40,7 +42,6 @@ const Quotes = () => {
       <h2>Quote of the day</h2>
       <blockquote>{quote}</blockquote>
       <span>{author}</span>
-      
       <div>
        <button
         onClick={handlerQuote}
