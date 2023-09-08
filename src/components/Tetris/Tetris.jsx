@@ -19,6 +19,39 @@ const Tetris = () => {
           ) : (
             <button onClick={startGame}>New Game</button>
             )}
+      <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding:"15px",
+          }}
+        >
+          <button
+            onClick={() => {}}
+            style={{fontSize: 24 }}
+          >
+            &#8592;
+          </button>
+          <button
+            onClick={() => {}}
+            style={{ fontSize: 24 }}
+          >
+            &#8593;
+          </button>
+          <button
+            onClick={() => {}}
+            style={{fontSize: 24 }}
+          >
+            &#8595;
+          </button>
+          <button
+            onClick={() => {}}
+            style={{ fontSize: 24 }}
+          >
+            &#8594;
+          </button>
+        </div>
       <h5>credits: Conner Ardman</h5>
       <p>&copy;2023 Oscar Warrieta</p>
       </div>
