@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import xIcon from '../assets/images/twitter-x-icon.png'
-
+// import meSpeak from 'mespeak'
+// import voices from 'mespeak/voices/en/en-us.json'
 const Quotes = () => {
   
     const [quote, setQuote] = useState('')
@@ -18,23 +19,30 @@ const Quotes = () => {
     
     useEffect(() => {
        fetchQuotes()
+
            
      }, [])
    
-    const handlerQuote = () => {
+        
+     const handlerQuote = () => {
     fetchQuotes()
    }
+   
    const handleClickTweet = () => {
     window.open(`https://twitter.com/intent/tweet?text=${quote} --- by ${author}`, "Tweet Window", "width=800, height=500")
    }
-   const handlerSound = () => {
-    const voices = speechSynthesis.getVoices()
-    let utterance = new SpeechSynthesisUtterance(`${quote},  ${author}` )
-    utterance.voice = voices[3]          
-    let voiceName = utterance.voice?.name
-    console.log('voz',voiceName);
-    // utterance.rate = 0.9
-    speechSynthesis.speak(utterance)
+   
+   const handlerSound =  () => {
+     
+     const utterance = new SpeechSynthesisUtterance(`${quote},  ${author}` )
+     const voices =  speechSynthesis?.getVoices()
+     
+     utterance.voice = voices[3] || voices[2]         
+      
+       let voiceName = utterance.voice?.name
+       console.log('voz',voiceName);
+    //   // utterance.rate = 0.9
+       speechSynthesis.speak(utterance)
    }
   
    return (
