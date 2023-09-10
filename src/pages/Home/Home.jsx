@@ -1,34 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Home.css'
 import Background from '../../components/MemoryGame/Background'
-
-const Links = [
-//    {
-//     name: 'Home',
-//     path:'/',
-//   },
-  {
-    name: 'Music Player',
-    path: '/music'
-  },
-  {
-    name: 'Weather',
-    path: '/weather',
-  },
-  {
-    name: 'Count Down [ Christmas & New Year ]',
-    path: '/countdown',
-  },
-  {
-    name: 'Random Daily Quotes',
-    path: '/quotes',
-  },
-  {
-    name: 'Pocket Games',
-    path: '/games',
-  }
-
-]
+import { Links } from '../../dataLinks'
 
 const Home = () => {
     return (
