@@ -25,7 +25,7 @@ export const Links = [
       },
       {
         name: 'Seismic-Tracking',
-        path: '#',
+        path: 'https://seismic-tracking.vercel.app/',
       },
       {
         name: 'Pocket Wikis',
