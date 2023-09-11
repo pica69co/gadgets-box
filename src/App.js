@@ -11,6 +11,7 @@ import  Game2048  from './components/Game2048/Game2048';
 import TicTac from './components/Tic-Tac/Tic-Tac';
 import MemoryGame from './components/MemoryGame/MemoryGame';
 import Tetris from './components/Tetris/Tetris';
+import PocketWikis from './pages/Home/PocketWikis/PocketWikis';
 function App() {
   return (
     <Router>
@@ -33,6 +34,7 @@ function App() {
       <Route path='/tic-tac' element={<TicTac />}> </Route>
       <Route path='/memory' element={<MemoryGame/>}> </Route>
       <Route path='/tetris' element={<Tetris/>}> </Route>
+      <Route path='/wikis' element={<PocketWikis/>}> </Route>
       </Routes>
            
     

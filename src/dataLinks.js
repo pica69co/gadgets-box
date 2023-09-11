@@ -29,7 +29,7 @@ export const Links = [
       },
       {
         name: 'Pocket Wikis',
-        path: '#',
+        path: '/wikis',
       },
       // {
       //   name: 'Clone',

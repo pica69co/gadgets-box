@@ -1,0 +1,19 @@
+.title{
+    font-size: 1.3rem;
+    color: lightgray;
+  }
+  .hunt{
+    display: flex;
+    flex-direction: column;
+        
+  }
+  .list-item{
+    font-size: 1.3rem;
+    cursor: pointer;    
+  }
+  .list-item{
+      color: #1a1a1a;
+      transform: scale(1.1);
+      text-decoration: none;
+      list-style: none;
+  }

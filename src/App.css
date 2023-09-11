@@ -92,3 +92,31 @@
   background: transparent;
   color: #333;
 }
+
+@media only screen and (max-width: 990px) {
+ .quote-box{
+  width: 300px;
+ }
+ .title{
+  font-size: 1vmin;
+ } 
+ .quote-box .blockquote::before{
+  font-size: 10px;
+ }
+ .quote-box h2 {
+  font-size: 5vmin;
+ }
+ .quote-box button{
+  width: 100px;
+  height: 30px;
+  font-size: 0.5rem;
+ }
+ .quote-box button img{
+  width: 8vmin;
+ }
+ /** To Do:  meanwhile fix error to copy text */
+ .quote-box button:nth-child(3){
+  display: none;
+}
+
+}
