@@ -180,3 +180,28 @@ body{
     padding: 15px;
     animation: animateAvatar .5s linear infinite;   
 }
+@media only screen and (max-width: 990px) {
+ .music-Container{
+    width: fit-content;
+    padding: 0 45px 40px 45px;
+    margin-top: -150px;
+ }
+ .headphone{
+    width: 20px;
+ }
+   
+ .musicPlayer{
+    font-size: 22px;
+ }
+ .music-Head-Name{
+    font-size: 18px;
+ }
+ .music-Artist-Name{
+    font-size: 18px;
+ }
+ .musicProgressBar{}
+ .musicController{}
+ #song-avatar{
+    width: 20px;
+ }
+}

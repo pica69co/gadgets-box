@@ -57,7 +57,9 @@
   display: flex;
   height: 30px;
   justify-content: space-between;
+  background: whitesmoke;
 }
+
 
 .daily-details-grid-item label:first-child {
   color: #757575;

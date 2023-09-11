@@ -47,7 +47,7 @@ function MusicPlayer() {
       setIsAudioPlaying(false)
     }
   }
-
+  //*ToDo: musicplay list from internet.
   const musicAPI = [
     {
       songName: 'Chasing',
@@ -141,7 +141,7 @@ function MusicPlayer() {
           <img src='./icons/head.svg' alt='headphone-icon' className='headphone'/></p>
         <p className='music-Head-Name'>{currentMusicDetails.songName}</p>
         <p className='music-Artist-Name'>{currentMusicDetails.songArtist}</p>
-        <img src={currentMusicDetails.songAvatar} className={avatarClass[avatarClassIndex]} onClick={handleAvatar} alt="song Avatar" id='songAvatar'/>
+        <img src={currentMusicDetails.songAvatar} className={avatarClass[avatarClassIndex]} style={{width:'80px', height:'80px'}} onClick={handleAvatar} alt="song Avatar" id='songAvatar'/>
         
         
         <div className="musicControllers">
