@@ -66,3 +66,17 @@
 .daily-details-grid-item label:last-child {
   color: #212121;
 }
+@media only screen and (max-width: 990px) {
+ .title{
+  font-size: 1vmin;
+ } 
+ .icon-small{
+  width: 25px;
+ }
+ .daily-item{
+  font-size: 12px;
+ }
+ .daily-details-grid {
+  padding: 2px;
+ }
+}
