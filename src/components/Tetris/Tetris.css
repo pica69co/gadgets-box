@@ -3,14 +3,21 @@
     grid-template-areas:
       ". title ."
       ". game controls";
-    grid-template-columns: repeat(3,1fr);
-    background-image: url('https://cdn.pixabay.com/photo/2016/03/26/09/42/road-sign-1280257_960_720.jpg');
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background-color: #406;
+    /* height: 100vh; */
+    padding: 20px;
   }
   
   .tetris-app > h1 {
-    text-align: center;
     grid-area: title;
-    background: whitesmoke;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+    color: #ccc;
+    background: rgb(32, 0, 64);
+    padding: 3px;
   }
   
   .controls > button {
@@ -23,16 +30,26 @@
   }
   
   .board {
-    border: 20px double #333;
+    border: 10px solid rgb(32, 0, 64);
+    display: grid;
+    grid-gap: 2px;
     user-select: none;
-    margin: auto;
+    margin: 2em auto;
     grid-area: game;
+    background: rgb(32, 0, 64);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   
   .controls {
+    height: 330px;
     grid-area: controls;
-    background: whitesmoke;
+    color: #ccc;
     justify-content: space-between;
+    border-radius: 10px;
+    border: 10px solid rgba(0, 0, 0, 0);
+    margin: 35px 5px;
+    background: rgba(32, 0, 64, 0.7);
   }
   
   .row {
@@ -40,18 +57,24 @@
   }
   
   .upcoming {
-    display: flex;
+    /* display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 10px; */
+    display: grid;
+    grid-gap: 2px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 11vw;
+    height: 11vw;
   }
   
   .cell {
     width: 25px;
     aspect-ratio: 1;
     border: 1px solid #333;
-    border-radius: 0;
-    background-color: #ccc; 
+    border-radius: 3.5px;
+    background-color: #ccc;
   }
     
   .cell.hidden {
@@ -59,7 +82,7 @@
   }
   
   .cell.Empty {
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(32, 0, 64);
   }
   
   .cell.I {
