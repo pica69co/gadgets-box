@@ -47,7 +47,7 @@ function MusicPlayer() {
       setIsAudioPlaying(false)
     }
   }
-  //*ToDo: musicplay list from internet.
+  //*ToDo: music-play list from internet.
   const musicAPI = [
     {
       songName: 'Chasing',

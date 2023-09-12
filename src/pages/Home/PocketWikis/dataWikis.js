@@ -9,7 +9,7 @@ const Games = [
     },
     {
       name:'Video Games',
-      url: '/videogames',
+      url: '/video-games',
       imageUrl: '',
       repoUrl: '',
       videoUrl: '',
