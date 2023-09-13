@@ -25,7 +25,7 @@ function App() {
     <div className="App">
      <div className='title'>
       <Link to='/' style={{textDecoration:'none'}}>     
-        <h1>Gadgets Box</h1>
+        <h1>Widgets-Box</h1>
       </Link>
     </div>
      
