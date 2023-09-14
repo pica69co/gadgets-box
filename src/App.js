@@ -17,6 +17,7 @@ import Movies from './pages/wikis/Movies/Movies';
 import Countries from './pages/wikis/Countries/Countries';
 import Dogs from './pages/wikis/Dogs/Dogs';
 import PokemonWiki from './pages/wikis/PokemonWiki/PokemonWiki';
+import Time from './components/Time/Time';
 
 function App() {
   return (
@@ -45,10 +46,11 @@ function App() {
       <Route path='/movies' element={<Movies/>}> </Route>
       <Route path='/countries' element={<Countries/>}> </Route>
       <Route path='/dogs' element={<Dogs/>}> </Route>
-      <Route path='/pokemon' element={<PokemonWiki/>}> </Route>
+      <Route path='/pokemon' element={<PokemonWiki/>}> 
+      </Route>
+      <Route path='/time' element={<Time />}></Route>
       </Routes>
-           
-    
+       
     </div>
     </Router>
   );

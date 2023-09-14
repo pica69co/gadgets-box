@@ -31,9 +31,9 @@ export const Links = [
         name: 'Pocket Wikis',
         path: '/wikis',
       },
-      // {
-      //   name: 'Clone',
-      //   path: '#',
-      // }
+       {
+         name: 'Time',
+         path: '/time',
+       },
       
     ]
