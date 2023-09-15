@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { convertTimeTo12HourFormat, convertTimeToUTCFormat } from './utils';
+import { convertTimeTo12HourFormat } from './utils';
 import AnalogClock from './Clock/AnalogClock';
 import { countries } from './countries';
 import './Clock/Time.css'
@@ -7,7 +7,7 @@ import './Clock/Time.css'
 function Time() {
   const [time, setTime] = useState(new Date());
   const [time12, setTime12] = useState('');
-  const [timeutc12, setTimeutc12] = useState('');
+  //const [timeutc12, setTimeutc12] = useState('');
   const [utc, setUtc] = useState('');
   const [offset, setOffset] = useState(false);
   
@@ -25,7 +25,8 @@ function Time() {
   const hours = time.getHours().toString().padStart(2, '0');
   const minutes = time.getMinutes().toString().padStart(2, '0');
   const seconds = time.getSeconds().toString().padStart(2, '0');
-  const day = time.getDay();
+  // const day = time.getDay();
+  // const any = time.getUTCDay()
   const dayName = time.toLocaleString('en-US', { weekday: 'short' });
   //const month = time.getMonth();
   const monthName = time.toLocaleString('en-US', { month: 'short' });
@@ -62,7 +63,7 @@ function Time() {
             <h1 key={c.country} title={c.country} onClick={handleClick}>{c.capital}</h1>
             ))}
       </div>
-      <h2>&copy;{`${dayName}, ${day}-${monthName}. ${year}`}</h2>
+      <h2>&copy;{`${dayName}, ${monthName}. ${year}`}</h2>
     </div>
   );
 }
