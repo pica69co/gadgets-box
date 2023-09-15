@@ -31,9 +31,19 @@
   }
   .list > h1{
     border: 1px solid black;
+    font-size: 1.5rem;
     padding: 15px;
     border-radius: 10px;
-
+    cursor: pointer;
+  }
+  .span{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ff572288;
+    padding: 2px;
+    
   }
   
   .clock-face {

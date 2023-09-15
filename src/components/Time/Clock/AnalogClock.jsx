@@ -1,16 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Time.css';
-function AnalogClock() {
-  const [time, setTime] = useState(new Date());
-
-  useEffect(() => {
-    const intervalID = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
-
-    return () => clearInterval(intervalID);
-  }, []);
-
+function AnalogClock({time}) {
   const hours = time.getHours();
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();

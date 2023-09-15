@@ -24,16 +24,11 @@ export const convertTimeTo24HourFormat = (time) => {
     }
 // function for converting time to UTC format
 export const convertTimeToUTCFormat = (time, utc) => {
-    let hours = time.getHours();
-    hours = hours - utc;
-    let minutes = time.getMinutes();
-    hours = hours % 24;
-    hours = hours ? hours : 24; // the hour "0" should be "12"
-    minutes = minutes < 10 ? `0${minutes}` : minutes;
-    let seconds = time.getSeconds();
-    let strTime = `${hours}:${minutes}:${seconds}`;
+    let hours = (time + utc);
+    let strTime = hours
     return strTime;
     }
+
 //   const timeConverter = (time, offset) => {
 //   const d = new Date(time);
 //   const utc = d.getTime() + d.getTimezoneOffset() * 60000;
