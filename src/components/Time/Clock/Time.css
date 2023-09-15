@@ -4,7 +4,7 @@
     border: 5px solid #333;
     border-radius: 50%;
     position: absolute;
-    margin: -12% 70%;
+    margin: -18% 70%;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #fff,
       inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
     
@@ -22,6 +22,7 @@
       
   }
   .list {
+    width: calc(100% - 10px);
     display: flex;
     flex-direction: row;
     flex: content;
@@ -31,7 +32,7 @@
   }
   .list > div h1{
     border: 1px solid black;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 15px;
     border-radius: 10px;
     cursor: pointer;
@@ -43,7 +44,6 @@
     font-weight: 600;
     color: #ff572288;
     padding: 2px;
-    
   }
   
   .clock-face {
@@ -80,6 +80,12 @@
     margin-top: 20px;
     padding: 10px;
     justify-content: center;
-    margin-left: 35%;
+    margin-left: 10%;
   }
-    
+  .lang-list{
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }  

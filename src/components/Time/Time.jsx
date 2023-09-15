@@ -67,7 +67,7 @@ function Time() {
             ):( `${hours}:${minutes}:${seconds}`)}
           
       </h1>
-          {offset && timezone ? (<p>{offset.city} UTC:{offset.utc}</p>) : <p>Local Time</p>}
+          {offset && timezone ? (<p>{offset.city} GMT/UTC:{offset.utc}</p>) : <p>Local Time</p>}
       </div>
       <AnalogClock time={time} />
       <h1 className='utc'>UTC Now: {`${utc}:${minutes}:${seconds}`}</h1>
@@ -79,6 +79,23 @@ function Time() {
             ))}
       </div>
       <h2>&copy;{`${dayName}, ${monthName}. ${year}`}</h2>
+        
+      <div className="lang-list" id="footerlangs" >
+        <h5  title="Chinese (simplified) / 中文">几点了？</h5>
+        <h5  title="Hindi / हिंदी">क्या समय हुआ है?</h5>
+        <h5  title="English">What time is it?</h5>
+        <h5  title="Spanish / español">¿Qué hora es?</h5>
+        <h5  title="French / français">Quelle heure est-il ?</h5>
+        <h5  title="Arabic / العربية">كم الساعة</h5>
+        <h5  title="Bengali / বাংলা">এখন কয়টা বাজে?</h5>
+        <h5  title="Russian / русский">Который час?</h5>
+        <h5  title="Portuguese (Brazil) / português (Brasil)">Que horas são?</h5>
+        <h5  title="Indonesian / bahasa Indonesia">Jam berapa?</h5>
+        <h5  title="German / Deutsch">Wieviel Uhr ist es?</h5>
+        <h5  title="Japanese / 日本語">今何時ですか？</h5>
+        <h5  title="Turkish / Türkçe">Saat kaç?</h5>
+        <h5  title="Tamil / தமிழ்">என்ன நேரம்?</h5>
+      </div>
     </div>
   );
 }
