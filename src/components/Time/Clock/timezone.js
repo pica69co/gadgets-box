@@ -1,113 +1,113 @@
 export const timeZone = [
     {
       "timezone": "America/New_York",
-      "city": "Nueva York",
-      "country": "Estados Unidos",
+      "city": "New York",
+      "country": "USA",
       "gmt": "-4",
       "utc": "-4"
     },
     {
       "timezone": "Europe/London",
-      "city": "Londres",
-      "country": "Reino Unido",
+      "city": "London",
+      "country": "United Kingdom",
       "gmt": "+1",
       "utc": "0"
     },
     {
       "timezone": "Asia/Tokyo",
-      "city": "Tokio",
-      "country": "Japón",
+      "city": "Tokyo",
+      "country": "Japan",
       "gmt": "+9",
       "utc": "+9"
     },
     {
       "timezone": "Australia/Sydney",
-      "city": "Sídney",
+      "city": "Sidney",
       "country": "Australia",
       "gmt": "+10",
       "utc": "+10"
     },
     {
       "timezone": "America/Los_Angeles",
-      "city": "Los Ángeles",
-      "country": "Estados Unidos",
+      "city": "Los Angeles",
+      "country": "USA",
       "gmt": "-7",
       "utc": "-7"
     },
     {
       "timezone": "Europe/Paris",
-      "city": "París",
-      "country": "Francia",
+      "city": "Paris",
+      "country": "France",
       "gmt": "+2",
       "utc": "+2"
     },
     {
       "timezone": "Asia/Shanghai",
-      "city": "Shanghái",
+      "city": "Shanghai",
       "country": "China",
       "gmt": "+8",
       "utc": "+8"
     },
     {
       "timezone": "Africa/Johannesburg",
-      "city": "Johannesburgo",
-      "country": "Sudáfrica",
+      "city": "Johannesburg",
+      "country": "South Africa",
       "gmt": "+2",
       "utc": "+2"
     },
     {
       "timezone": "America/Toronto",
       "city": "Toronto",
-      "country": "Canadá",
+      "country": "Canada",
       "gmt": "-4",
       "utc": "-4"
     },
     {
       "timezone": "Europe/Berlin",
-      "city": "Berlín",
-      "country": "Alemania",
+      "city": "Berlin",
+      "country": "Germany",
       "gmt": "+2",
       "utc": "+2"
     },
     {
       "timezone": "Asia/Dubai",
-      "city": "Dubái",
-      "country": "Emiratos Árabes Unidos",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
       "gmt": "+4",
       "utc": "+4"
     },
     {
       "timezone": "Pacific/Auckland",
       "city": "Auckland",
-      "country": "Nueva Zelanda",
+      "country": "New Zealand",
       "gmt": "+12",
       "utc": "+12"
     },
     {
       "timezone": "America/Mexico_City",
-      "city": "Ciudad de México",
-      "country": "México",
+      "city": "Mexico City",
+      "country": "Mexico",
       "gmt": "-5",
       "utc": "-5"
     },
     {
       "timezone": "Europe/Moscow",
-      "city": "Moscú",
-      "country": "Rusia",
+      "city": "Moscow",
+      "country": "Russia",
       "gmt": "+3",
       "utc": "+3"
     },
     {
       "timezone": "Asia/Singapore",
-      "city": "Singapur",
-      "country": "Singapur",
+      "city": "Singapore",
+      "country": "Singapore",
       "gmt": "+8",
       "utc": "+8"
     },
     {
       "timezone": "Africa/Cairo",
-      "city": "El Cairo",
-      "country": "Egipto",
+      "city": "Cairo",
+      "country": "Egypt",
       "gmt": "+2",
       "utc": "+2"
     },
@@ -120,7 +120,7 @@ export const timeZone = [
     },
     {
       "timezone": "Asia/Kolkata",
-      "city": "Nueva Delhi",
+      "city": "New Delhi",
       "country": "India",
       "gmt": "+5:30",
       "utc": "+5:30"
@@ -133,22 +133,22 @@ export const timeZone = [
       "utc": "+10"
     },
     {
-      "timezone": "America/Chicago",
-      "city": "Chicago",
-      "country": "Estados Unidos",
+      "timezone": "America/Bogota",
+      "city": "Bogota",
+      "country": "Colombia",
       "gmt": "-5",
       "utc": "-5"
     },
     {
       "timezone": "Europe/Madrid",
       "city": "Madrid",
-      "country": "España",
+      "country": "Spain",
       "gmt": "+2",
       "utc": "+2"
     },
     {
       "timezone": "Asia/Jakarta",
-      "city": "Yakarta",
+      "city": "Jakarta",
       "country": "Indonesia",
       "gmt": "+7",
       "utc": "+7"
@@ -169,8 +169,8 @@ export const timeZone = [
     },
     {
       "timezone": "Asia/Seoul",
-      "city": "Seúl",
-      "country": "Corea del Sur",
+      "city": "Seoul",
+      "country": "South Korea",
       "gmt": "+9",
       "utc": "+9"
     },
@@ -184,97 +184,97 @@ export const timeZone = [
     {
       "timezone": "America/Vancouver",
       "city": "Vancouver",
-      "country": "Canadá",
+      "country": "Canada",
       "gmt": "-7",
       "utc": "-7"
     },
     {
       "timezone": "Europe/Stockholm",
-      "city": "Estocolmo",
-      "country": "Suecia",
+      "city": "Stockholm",
+      "country": "Sweden",
       "gmt": "+2",
       "utc": "+2"
     },
     {
       "timezone": "Asia/Riyadh",
-      "city": "Riad",
-      "country": "Arabia Saudita",
+      "city": "Riyadh",
+      "country": "Saudi Arabia",
       "gmt": "+3",
       "utc": "+3"
     },
     {
       "timezone": "Africa/Nairobi",
       "city": "Nairobi",
-      "country": "Kenia",
+      "country": "Kenya",
       "gmt": "+3",
       "utc": "+3"
     },
     {
       "timezone": "America/Denver",
       "city": "Denver",
-      "country": "Estados Unidos",
+      "country": "USA",
       "gmt": "-6",
       "utc": "-6"
     },
     {
       "timezone": "Europe/Amsterdam",
-      "city": "Ámsterdam",
-      "country": "Países Bajos",
+      "city": "Amsterdam",
+      "country": "Netherlands",
       "gmt": "+2",
       "utc": "+2"
     },
     {
       "timezone": "Asia/Manila",
       "city": "Manila",
-      "country": "Filipinas",
+      "country": "Philippines",
       "gmt": "+8",
       "utc": "+8"
     },
     {
       "timezone": "Africa/Casablanca",
       "city": "Casablanca",
-      "country": "Marruecos",
+      "country": "Morocco",
       "gmt": "+1",
       "utc": "+1"
     },
     {
       "timezone": "America/Phoenix",
       "city": "Phoenix",
-      "country": "Estados Unidos",
+      "country": "USA",
       "gmt": "-7",
       "utc": "-7"
     },
     {
       "timezone": "Europe/Prague",
-      "city": "Praga",
-      "country": "República Checa",
+      "city": "Prague",
+      "country": "Czech Republic",
       "gmt": "+2",
       "utc": "+2"
     },
     {
       "timezone": "Asia/Taipei",
-      "city": "Taipéi",
-      "country": "Taiwán",
+      "city": "Taipei",
+      "country": "Taiwan",
       "gmt": "+8",
       "utc": "+8"
     },
     {
       "timezone": "Africa/Tunis",
-      "city": "Túnez",
-      "country": "Túnez",
+      "city": "Tunisia",
+      "country": "Tunisia",
       "gmt": "+1",
       "utc": "+1"
     },
     {
       "timezone": "America/Atlanta",
       "city": "Atlanta",
-      "country": "Estados Unidos",
+      "country": "USA",
       "gmt": "-4",
       "utc": "-4"
     },
     {
       "timezone": "Europe/Vienna",
-      "city": "Viena",
+      "city": "Vienna",
       "country": "Austria",
       "gmt": "+2",
       "utc": "+2"
@@ -282,28 +282,28 @@ export const timeZone = [
     {
       "timezone": "Asia/Kuala_Lumpur",
       "city": "Kuala Lumpur",
-      "country": "Malasia",
+      "country": "Malaysia",
       "gmt": "+8",
       "utc": "+8"
     },
     {
       "timezone": "Africa/Algiers",
-      "city": "Argel",
-      "country": "Argelia",
+      "city": "Algiers",
+      "country": "Algeria",
       "gmt": "+1",
       "utc": "+1"
     },
     {
       "timezone": "America/Detroit",
       "city": "Detroit",
-      "country": "Estados Unidos",
+      "country": "USA",
       "gmt": "-4",
       "utc": "-4"
     },
     {
       "timezone": "Europe/Warsaw",
-      "city": "Varsovia",
-      "country": "Polonia",
+      "city": "Warsaw",
+      "country": "Poland",
       "gmt": "+2",
       "utc": "+2"
     },

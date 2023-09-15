@@ -25,6 +25,7 @@ function AnalogClock({time}) {
           style={{ transform: `rotate(${secondDeg}deg)` }}
         ></div>
       </div>
+      
     </div>
   );
 }
