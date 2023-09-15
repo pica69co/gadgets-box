@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { convertTimeTo12HourFormat } from './utils';
 import AnalogClock from './Clock/AnalogClock';
-import { countries } from './countries';
+
 import './Clock/Time.css'
+import { timeZone } from './Clock/timezone';
 
 function Time() {
   const [time, setTime] = useState(new Date());
+  
   const [time12, setTime12] = useState('');
-  //const [timeutc12, setTimeutc12] = useState('');
+  const [timezone, setTimezone] = useState('America/Bogota');
   const [utc, setUtc] = useState('');
   const [offset, setOffset] = useState(false);
   
@@ -22,6 +24,7 @@ function Time() {
     return () => clearInterval(intervalID);
   }, []);
 
+  const localTime = time.toLocaleTimeString('en-US',  {timeZone:timezone} );
   const hours = time.getHours().toString().padStart(2, '0');
   const minutes = time.getMinutes().toString().padStart(2, '0');
   const seconds = time.getSeconds().toString().padStart(2, '0');
@@ -31,18 +34,24 @@ function Time() {
   //const month = time.getMonth();
   const monthName = time.toLocaleString('en-US', { month: 'short' });
   const year = time.getFullYear();
+  
   const handleClick = (e) => {
     const country = e.target.title;
-    const result = countries.filter((c) => c.country === country);
-    setOffset({capital:result[0].capital, gmt:result[0].gmt});
-    // console.log('capital', result[0].capital);
+    const result = timeZone.filter((c) => c.country === country);
+    setTimezone(result[0].timezone);
+    setOffset({
+      city:result[0].city,
+      country:result[0].country,
+      utc:result[0].utc,
+    })
   }
   
- // console.log(offset);
-  
+    
   return (
     <div>
        {/* <h2>{time12}</h2> */}
+      <div>
+
       <h1 className='digital-clock'
        style={{
         fontSize: '5.2rem',
@@ -52,15 +61,21 @@ function Time() {
         border: '3px solid #333',
       }}
       >
-        
-        { offset && offset.capital ? `${utc}:${minutes}:${seconds}` : `${hours}:${minutes}:${seconds}`} 
-        { offset && offset.capital ? <span className='span'>GMT {offset.gmt} - {offset.capital}</span> : null }   
+         { offset 
+            ? ( <span>{localTime}</span>
+            
+            ):( `${hours}:${minutes}:${seconds}`)}
+          
       </h1>
+          {offset && timezone ? (<p>{offset.city} UTC:{offset.utc}</p>) : <p>Local Time</p>}
+      </div>
       <AnalogClock time={time} />
       <h1 className='utc'>UTC Now: {`${utc}:${minutes}:${seconds}`}</h1>
       <div className="list" >
-        {countries.map((c) => (
-            <h1 key={c.country} title={c.country} onClick={handleClick}>{c.capital}</h1>
+        {timeZone.map((c) => (
+            <div key={c.country}>
+               <h1  title={c.country} onClick={handleClick}>{c.city}</h1>
+            </div>
             ))}
       </div>
       <h2>&copy;{`${dayName}, ${monthName}. ${year}`}</h2>
