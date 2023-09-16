@@ -96,7 +96,7 @@ const CountdownTimer = () => {
         <span className="label">{' '} Seconds</span>
       </div>)}
       </div>
-       <p>&copy;{' '}{`${year}/${month}/${day}`}</p>     
+       <p>&copy;Oscar Warrieta {' '}{`${year}/${month}/${day}`}</p>     
     </div>
   );
 };
