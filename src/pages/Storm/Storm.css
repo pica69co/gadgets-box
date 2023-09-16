@@ -6,6 +6,7 @@
 }
 .widget-content{
     padding: 0px;
+    
     li{
         text-decoration: none;
         list-style: none;
@@ -17,3 +18,10 @@
         text-align: center;
         }
     }
+.list-storm{
+
+}
+.list-item{
+    padding: 5px;
+    margin: 5px;
+}    

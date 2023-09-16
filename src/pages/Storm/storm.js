@@ -4,15 +4,9 @@ export const storm = [
         name:'Active Storms',
         path:'active-storms',
         url:'http://sirocco.accuweather.com/sat_mosaic_640x480_public/ei/isaemex.gif',
-        desc:'Satellite images of the tropical storm',
+        desc:'Satellite Images of the Tropical Storm',
         url2:'http://tropic.ssec.wisc.edu/real-time/mimtc/2018_03E/web/last48hrs.gif',
-        desc2:'microwave satellite image',
-        url3:'',
-        desc3:'',
-        url4:'',
-        desc4:'',
-        url5:'',
-        desc5:'',
+        desc2:'Microwave Satellite Image',
         description:'',
         image:''
     },
@@ -184,12 +178,5 @@ export const storm = [
         description:'',
         image:''
     },
-    // { 
-    //     name:'',
-    //     path:'',
-    //     url:'',
-    //     description:'',
-    //     image:''
-    // },
-    
+        
 ]
