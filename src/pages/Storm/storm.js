@@ -1,4 +1,4 @@
-//json with name, url, description, and optional image
+//json with name, url, desc, description, and optional image
 export const storm = [
     { 
         name:'Active Storms',
@@ -165,8 +165,6 @@ export const storm = [
         desc4:'Total precipitable water in the world',
         url5:'',
         desc5:'',
-
-
         description:'',
         image:''
     },
@@ -186,12 +184,12 @@ export const storm = [
         description:'',
         image:''
     },
-    { 
-        name:'',
-        path:'',
-        url:'',
-        description:'',
-        image:''
-    },
+    // { 
+    //     name:'',
+    //     path:'',
+    //     url:'',
+    //     description:'',
+    //     image:''
+    // },
     
 ]

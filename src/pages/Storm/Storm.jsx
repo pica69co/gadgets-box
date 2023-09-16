@@ -22,7 +22,9 @@ const Storm = () => {
               </li>
             </ul>
             )}
-            <div class="clear"></div>
+            <div class="clear">
+              <h5>&copy;Oscar Warrieta</h5>
+            </div>
             </div>
         </div>
       </div>
