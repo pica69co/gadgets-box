@@ -70,7 +70,7 @@ function Time() {
             {offset.city} GMT/UTC {offset.utc}
           </p>
         ) : (
-          <p className="date">Local Time</p>
+          <p className="date">Current Local Time</p>
         )}
       </div>
       <AnalogClock time={time} />

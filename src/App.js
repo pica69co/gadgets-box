@@ -18,6 +18,7 @@ import Countries from './pages/wikis/Countries/Countries';
 import Dogs from './pages/wikis/Dogs/Dogs';
 import PokemonWiki from './pages/wikis/PokemonWiki/PokemonWiki';
 import Time from './components/Time/Time';
+import Storm from './pages/Storm/Storm';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
       <Route path='/pokemon' element={<PokemonWiki/>}> 
       </Route>
       <Route path='/time' element={<Time />}></Route>
+      <Route path='/storm' element={<Storm />}></Route>
       </Routes>
        
     </div>

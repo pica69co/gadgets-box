@@ -1,39 +1,38 @@
 export const Links = [
-    //    {
-    //     name: 'Home',
-    //     path:'/',
-    //   },
-      {
-        name: 'Music Player',
-        path: '/music'
-      },
-      {
-        name: 'Weather',
-        path: '/weather',
-      },
-      {
-        name: 'Count Down [ Christmas & New Year ]',
-        path: '/countdown',
-      },
-      {
-        name: 'Random Daily Quotes',
-        path: '/quotes',
-      },
-      {
-        name: 'Pocket Games',
-        path: '/games',
-      },
-      {
-        name: 'Seismic-Tracking',
-        path: 'https://seismic-tracking.vercel.app/',
-      },
-      {
-        name: 'Pocket Wikis',
-        path: '/wikis',
-      },
-       {
-         name: 'Time',
-         path: '/time',
-       },
-      
-    ]
+  {
+    name: "Random Daily Quotes",
+    path: "/quotes",
+  },
+  {
+    name: "Music Player",
+    path: "/music",
+  },
+  {
+    name: "Count Down [ Christmas & New Year ]",
+    path: "/countdown",
+  },
+  {
+    name: "Pocket Games",
+    path: "/games",
+  },
+  {
+    name: "Pocket Wikis",
+    path: "/wikis",
+  },
+  {
+    name: "Weather",
+    path: "/weather",
+  },
+  {
+    name: "Seismic-Tracking",
+    path: "https://seismic-tracking.vercel.app/",
+  },
+  {
+    name: "Storm-Tracking",
+    path: "/storm",
+  },
+  {
+    name: "Time",
+    path: "/time",
+  },
+];
