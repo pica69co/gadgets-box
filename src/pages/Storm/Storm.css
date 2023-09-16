@@ -1,0 +1,19 @@
+.body{
+    font: normal normal 12px Arial,Tahoma, Helvetica, FreeSans, sans-serif;
+    color: #000000;
+    background: #18181840 none repeat scroll top left;
+    padding: 0 40px 40px 40px;
+}
+.widget-content{
+    padding: 0px;
+    li{
+        text-decoration: none;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        }
+    }
