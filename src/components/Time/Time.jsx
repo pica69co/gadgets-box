@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { convertTimeTo12HourFormat } from "./utils";
+import { convertTimeTo12HourFormat, langs } from "./utils";
 import AnalogClock from "./Clock/AnalogClock";
 
 import "./Clock/Time.css";
@@ -56,11 +56,11 @@ function Time() {
             textAlign: "center",
             marginTop: "20px",
             width: "fit-content",
-            padding:"30px",
+            padding: "30px",
             border: "3px solid #333",
             borderRadius: "10px",
             boxShadow: "0 0 10px #333",
-            }}
+          }}
         >
           {offset ? <span>{localTime}</span> : time12}
         </h1>
@@ -76,30 +76,20 @@ function Time() {
       <AnalogClock time={time} />
       <h1 className="utc">UTC Now: {`${utc}:${minutes}:${seconds}`}</h1>
       <div className="list">
-        {timeZone.map((c) => (
-          <div key={c.country}>
+        {timeZone.map((c, idx) => (
+          <div key={c.idx}>
             <h1 title={c.country} onClick={handleClick}>
               {c.city}
             </h1>
           </div>
         ))}
       </div>
-
-      <div className="lang-list" id="footerlangs">
-        <h5 title="Chinese (simplified) / 中文">几点了？</h5>
-        <h5 title="Hindi / हिंदी">क्या समय हुआ है?</h5>
-        <h5 title="English">What time is it?</h5>
-        <h5 title="Spanish / español">¿Qué hora es?</h5>
-        <h5 title="French / français">Quelle heure est-il ?</h5>
-        <h5 title="Arabic / العربية">كم الساعة</h5>
-        <h5 title="Bengali / বাংলা">এখন কয়টা বাজে?</h5>
-        <h5 title="Russian / русский">Который час?</h5>
-        <h5 title="Portuguese (Brazil) / português (Brasil)">Que horas são?</h5>
-        <h5 title="Indonesian / bahasa Indonesia">Jam berapa?</h5>
-        <h5 title="German / Deutsch">Wieviel Uhr ist es?</h5>
-        <h5 title="Japanese / 日本語">今何時ですか？</h5>
-        <h5 title="Turkish / Türkçe">Saat kaç?</h5>
-        <h5 title="Tamil / தமிழ்">என்ன நேரம்?</h5>
+      <div className="lang-list">
+        {langs.map((lang, idx) => (
+          <div key={lang.idx}>
+            <h5 title={lang.title}>{lang.question} </h5>
+          </div>
+        ))}
       </div>
       <h5>&copy;Oscar Warrieta</h5>
     </div>
