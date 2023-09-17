@@ -14,6 +14,7 @@ export const storm = [
         name:'Conditions in the Atlantic Ocean',
         path:'conditions-atlantic',
         url:'https://cdn.star.nesdis.noaa.gov/GOES16/ABI/GIFS/GOES16-TAW-GEOCOLOR-900x540.gif',
+        desc:'Satellite images of the Atlantic Ocean',
         url2:'https://cdn.star.nesdis.noaa.gov/GOES16/ABI/GIFS/GOES16-CONUS-GEOCOLOR-625x375.gif',
         url3:'http://derecho.math.uwm.edu/models/quicklook-gtwo.png',
         url4:'http://www.nhc.noaa.gov/xgtwo/two_atl_0d0.png',
@@ -45,8 +46,6 @@ export const storm = [
         desc21:'Probability of cyclone formation during the next 48 hours (current conditions)',
         url22:'http://www.nhc.noaa.gov/tafb_latest/danger_atl_latestBW.gif',
         desc22:'Probability of cyclone formation during the next 48 hours (current conditions)',
-        url23:'',
-        desc23:'',
         description:'',
         image:''
 
