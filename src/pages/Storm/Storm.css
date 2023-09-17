@@ -4,6 +4,13 @@
     background: #18181840 none repeat scroll top left;
     padding: 0 40px 40px 40px;
 }
+.atlantic-title{
+    font-size: 1.35rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
 .widget-content{
     padding: 0px;
     
@@ -24,4 +31,7 @@
 .list-item{
     padding: 5px;
     margin: 5px;
-}    
+}
+.list-item h1{
+    font-size: 1rem;
+}  
