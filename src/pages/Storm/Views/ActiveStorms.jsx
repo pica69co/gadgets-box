@@ -14,9 +14,23 @@ const ActiveStorms = () => {
         <div className='active-list'>
           <div className='list-item'>
               <h1>{filtered[0].desc}</h1>
-              <img src={filtered[0].url} alt='active-storm' width={550} height={320} />
+              <img
+                 src={filtered[0].url} 
+                 alt='active-storm' 
+                 width={550} height={300} 
+                 title={filtered[0].desc} 
+              />
           </div>
           {/*  */}
+          <div className='list-item'>
+              <h1>{filtered[0].desc3}</h1>
+              <img 
+                src={filtered[0].url3} 
+                alt='active-storm' 
+                width={550} height={220} 
+                title={filtered[0].desc3}  
+              />
+          </div>
         </div>
 
       
