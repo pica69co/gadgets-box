@@ -18,7 +18,7 @@ const Central = () => {
               alt="central"
               width={350}
               height={150}
-              title=""
+              title="Infrared Satellite-Central America "
             />
           </div>
 
@@ -31,7 +31,7 @@ const Central = () => {
               alt="central2"
               width={350}
               height={150}
-              title=""
+              title="Satellite Image Central America"
             />
           </div>
         </div>
