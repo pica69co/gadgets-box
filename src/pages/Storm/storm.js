@@ -85,8 +85,8 @@ export const storm = [
     { 
         name:'Interactive forecast models',
         path:'interactive-forecast-models',
-        url:'https://embed.windy.com/embed2.html?lat=25.245&lon=-83.584&zoom=4&level=surface&overlay=wind&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=true&detailLat=18.467&detailLon=-69.900&metricWind=km%2Fh&metricTemp=%C2%B0C',
-        desc:'windy/windyty version for the Atlantic Ocean, the Pacific Ocean and the rest of the world.',
+        url:'https://embed.windy.com/embed2.html?lat=-4.245&lon=-83.584&zoom=4&level=surface&overlay=wind&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=true&detailLat=10.963889,&detailLon=-74.796387.&metricWind=km%2Fh&metricTemp=%C2%B0C',
+        desc:'windyty + Weather Version for the Atlantic Ocean, the Pacific Ocean and the rest of the world.',
         description:'',
         image:''
     },
