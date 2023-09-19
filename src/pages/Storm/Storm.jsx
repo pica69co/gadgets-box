@@ -7,23 +7,24 @@ const Storm = () => {
     <div className="body">
       <h1>Storm-Tracking </h1>
       <div className="widget-content">
-        <span> The </span><b>hurricane season </b>in the Atlantic extends from June 1 to November 30 and in the Eastern Pacific from May 15 to November 30.
+        <h3><strong>The hurricane season</strong> in the Atlantic extends from June 1-Nov 30 and in the Eastern Pacific from May 15-Nov 30.          
+        </h3>
         </div>
-           <img src='https://cdn.pixabay.com/photo/2016/03/26/09/42/road-sign-1280257_960_720.jpg' alt='background' width={250} height={120} />
+           <img src='https://cdn.star.nesdis.noaa.gov/GOES16/ABI/GIFS/GOES16-CAR-02-1000x1000.gif' alt='background' width={300} height={180} />
         <div className="tabs section" id="crosscol-overflow">
           <div className="widget PageList" >
             <h2>Pages</h2>
               <div className="widget-content">
                 {storm.map((item,idx) => 
                 <ul key={idx}>
-                  <li>
+                  <h4>
                     <a href={`/storm/${item.path}`}>{item.name}</a>
-                  </li>
+                  </h4>
                 </ul>
                 )}
-            <div className="clear">
-              <h5>&copy;Oscar Warrieta, 2023</h5>
             </div>
+            <div className="clear">
+              <h5>&copy;2023 Oscar Warrieta</h5>
             </div>
         </div>
       </div>

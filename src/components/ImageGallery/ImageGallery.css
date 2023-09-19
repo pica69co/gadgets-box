@@ -2,16 +2,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  
   }
   
   .image {
+   width: fit-content; 
     margin: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
   }
   
   .image img {
     max-width: 100%;
     height: auto;
     display: block;
+    
   }
-  
+  .image h3{
+    text-align: justify;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
