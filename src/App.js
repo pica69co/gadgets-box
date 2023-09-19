@@ -27,6 +27,7 @@ import Central from "./pages/Storm/Views/Central";
 import Caribean from "./pages/Storm/Views/Caribean";
 import WorldMaps from "./pages/Storm/Views/WorldMaps";
 import Satellite from "./pages/Storm/Views/Satellite";
+import Webcams from "./pages/Storm/Views/Webcams";
 
 function App() {
   return (
@@ -107,6 +108,7 @@ function App() {
           ></Route>
           <Route path="/storm/world-maps" element={<WorldMaps />}></Route>
           <Route path="/storm/satellite-images" element={<Satellite />}></Route>
+          <Route path="/storm/webcams" element={<Webcams />}></Route>
         </Routes>
       </div>
     </Router>
