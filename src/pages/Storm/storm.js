@@ -373,8 +373,9 @@ export const storm = [
         path: 'webcams',
         description: 'webcams',
         image: '',
-    }
-            // { 
+    },
+    
+    // { 
             //     name:'satellite images',
             //     description:'',
             //     image:''

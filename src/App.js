@@ -28,6 +28,7 @@ import Caribean from "./pages/Storm/Views/Caribean";
 import WorldMaps from "./pages/Storm/Views/WorldMaps";
 import Satellite from "./pages/Storm/Views/Satellite";
 import Webcams from "./pages/Storm/Views/Webcams";
+import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 
 function App() {
   return (
@@ -109,6 +110,7 @@ function App() {
           <Route path="/storm/world-maps" element={<WorldMaps />}></Route>
           <Route path="/storm/satellite-images" element={<Satellite />}></Route>
           <Route path="/storm/webcams" element={<Webcams />}></Route>
+          <Route path="/storm/webcams/video-player" element={<VideoPlayer />}></Route>
         </Routes>
       </div>
     </Router>
