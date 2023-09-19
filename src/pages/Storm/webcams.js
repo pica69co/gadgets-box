@@ -3,12 +3,9 @@ const { REACT_APP_WINDY_WEBCAM_URL, REACT_APP_WINDY_API_KEY } = process.env;
 //request for webcams from windy.com
 
 
-const FetchWebcams = async () => {
+export const FetchWebcams = async () => {
     try {
-        //console.log('key', REACT_APP_WINDY_API_KEY);
         const api_url = REACT_APP_WINDY_WEBCAM_URL
-      //console.log('api',api_url);
-
         const response = await fetch(api_url,
             { 
             method: 'GET',
@@ -17,12 +14,29 @@ const FetchWebcams = async () => {
             }
         });
         const data = await response.json();
-        console.log(data)
+        //console.log(data)
             return data;
         } catch (error) {
             console.log(error.message);
         }
         
     };
-    console.log(FetchWebcams())
-export default FetchWebcams;
+
+export const FetchWebcamsById = async (webcamId) => {
+    try {
+        const api_url = REACT_APP_WINDY_WEBCAM_URL + "/" + webcamId + "?lang=en&include=images"
+        console.log(api_url);
+        const response = await fetch(api_url,
+            { 
+            method: 'GET',
+            headers: {
+            "x-windy-api-key":REACT_APP_WINDY_API_KEY 
+            }
+        });
+        const data = await response.json();
+        //console.log(data)
+            return data;
+        } catch (error) {
+            console.log(error.message);
+        }
+    };    

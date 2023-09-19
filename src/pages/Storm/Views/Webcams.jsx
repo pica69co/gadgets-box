@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import FetchWebcams from '../webcams'
+import { FetchWebcams, FetchWebcamsById } from '../webcams'
 
 const Webcams = () => {
   const [webcams, setWebcams] = useState(null)
@@ -9,6 +9,14 @@ const Webcams = () => {
     
   },[])
 
+  const handlerClick = (e) =>  {
+    const webcamId = e.target.id  
+    
+    FetchWebcamsById(webcamId)
+    .then((data) => {
+      console.log(data)
+    })
+  }
    return ( 
 
     <div>
@@ -18,6 +26,7 @@ const Webcams = () => {
             <div key={id}>
               <h3>{webcam.title}</h3>
               <h5>{webcam.status}</h5>
+              <button id={webcam.webcamId} onClick={handlerClick }>{webcam.webcamId}</button>
             </div>
           ))}
           </div>
