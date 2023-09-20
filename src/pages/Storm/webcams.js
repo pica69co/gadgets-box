@@ -24,8 +24,9 @@ export const FetchWebcams = async () => {
 
 export const FetchWebcamsById = async (webcamId) => {
     try {
-        const api_url = REACT_APP_WINDY_WEBCAM_URL + "/" + webcamId + "?lang=en&include=images"
+        const api_url = REACT_APP_WINDY_WEBCAM_URL + "/" + webcamId + "?lang=en&include=player"
         console.log(api_url);
+        console.log(webcamId);
         const response = await fetch(api_url,
             { 
             method: 'GET',
@@ -34,7 +35,7 @@ export const FetchWebcamsById = async (webcamId) => {
             }
         });
         const data = await response.json();
-        //console.log(data)
+        console.log(data)
             return data;
         } catch (error) {
             console.log(error.message);

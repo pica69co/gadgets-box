@@ -14,6 +14,7 @@ const Webcams = () => {
     FetchWebcams().then((data) => setWebcams(data))
     setLoading(false)
   },[])
+  
 
   const handlerClick = (e) =>  {
     const webcamId = e.target.id  
@@ -34,9 +35,15 @@ const Webcams = () => {
     <div>
         <h1>Webcams</h1>
         {/*TODO: Modal */}
-          {modal && (
-            <VideoPlayer camDetails={camDetails} webcams={webcams} />
-          )}
+          {/* {modal && (
+            <VideoPlayer 
+              camDetails={camDetails} 
+              modal={modal} 
+              setModal={setModal}
+              loading={loading}
+              setLoading={setLoading}
+              />
+          )} */}
         <div>
           { loading ? 'Loading...' :
           webcams?.webcams?.map((webcam, id) => (
