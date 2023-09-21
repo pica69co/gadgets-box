@@ -1,3 +1,20 @@
+.head{
+  color: aliceblue;
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0px;
+  animation: adjust-header linear both;
+  animation-timeline: scroll();
+  animation-range: 0 200px;
+}
+@keyframes adjust-header {
+  to {
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    height: 24px;
+  }
+  
+}
 .image-gallery {
     display: flex;
     flex-wrap: wrap;

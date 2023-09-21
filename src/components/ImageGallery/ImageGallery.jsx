@@ -6,7 +6,10 @@ const ImageGallery = ({ namePage }) => {
   const filtered = storm.filter((s) => s.name === namePage);
 
   return (
+  <div>
+    <header className="head"><h2>{namePage}</h2></header>
     <div className="image-gallery">
+      
       {filtered.map((item, idx) => (
         <div className="image-list" key={idx}>
           {item.url.map((url, idx) => (
@@ -24,17 +27,18 @@ const ImageGallery = ({ namePage }) => {
                 </h3>
               ) : (
                 <img 
-                  src={url.url} 
-                  alt={url.alt} 
-                  title={url.title} 
-                               
+                src={url.url} 
+                alt={url.alt} 
+                title={url.title} 
+                
                   />
-              )}
+                  )}
             </div>
           ))}
         </div>
       ))}
     </div>
+  </div>
   );
 };
 

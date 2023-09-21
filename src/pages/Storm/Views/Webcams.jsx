@@ -33,7 +33,8 @@ const Webcams = () => {
    return ( 
 
     <div>
-        <h1>Webcams</h1>
+        <div className='head'><h1>Webcams</h1>
+        </div>      
         {/*TODO: Modal */}
           {/* {modal && (
             <VideoPlayer 
