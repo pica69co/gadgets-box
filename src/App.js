@@ -34,8 +34,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="title">
-          <Link to="/" style={{ textDecoration: "none" }}>
+        <div className="title-nav">
+          <Link to="/" style={{textDecoration: 'none'}}>
             <h1>Widgets-Box</h1>
           </Link>
         </div>

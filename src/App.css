@@ -8,10 +8,10 @@
   margin: 20px auto;
   
 }
-.title{
-  font-size: 2rem;
-  text-decoration: none;
-} 
+/*  */
+.title-nav{
+  font-size: 0.8rem;
+}
 .quote-box{
   font-family: 'Playfair Display', serif;
   background: #fff;

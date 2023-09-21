@@ -5,7 +5,8 @@ import "./Storm.css";
 const Storm = () => {
   return (
     <div className="body">
-      <h1>Storm-Tracking </h1>
+      <div className="head"><h1>Storm-Tracking </h1>
+      </div>
       <div className="widget-content">
         <h3><strong>The hurricane season</strong> in the Atlantic extends from June 1-Nov 30 and in the Eastern Pacific from May 15-Nov 30.          
         </h3>
