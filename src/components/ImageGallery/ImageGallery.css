@@ -1,4 +1,4 @@
-.head {
+ .head {
   color: aliceblue;
   font-size: 1rem;
   background: #333050;
@@ -19,7 +19,7 @@
   }
 }
 .image-gallery {
-  --s: 120px;
+  --s: 130px;
   --g: 10px;
   --f: 1.5;
 
@@ -64,4 +64,5 @@
   color: #333;
   margin: 0;
   padding: 0;
-}
+} 
+

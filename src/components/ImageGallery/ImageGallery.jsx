@@ -4,8 +4,10 @@ import { storm } from "../../pages/Storm/storm";
 
 const ImageGallery = ({ namePage }) => {
   const filtered = storm.filter((s) => s.name === namePage);
-
-  return (
+ const item = filtered.map((item, idx) => item)
+ console.log(item); 
+ return (
+      
   <div className="images-container">
     <h2 className="head">{namePage}</h2>
     <div className="image-gallery">
