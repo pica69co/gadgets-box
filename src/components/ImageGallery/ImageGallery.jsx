@@ -6,15 +6,14 @@ const ImageGallery = ({ namePage }) => {
   const filtered = storm.filter((s) => s.name === namePage);
 
   return (
-  <div>
-    <header className="head"><h2>{namePage}</h2></header>
+  <div className="images-container">
+    <h2 className="head">{namePage}</h2>
     <div className="image-gallery">
-      
       {filtered.map((item, idx) => (
         <div className="image-list" key={idx}>
           {item.url.map((url, idx) => (
             <div className="image" key={idx + 1}>
-              <h3>{url.desc}</h3>
+              <h3>{url.desc}</h3> 
               {namePage === "Interactive forecast models" ? (
                 <h3 className="windy-title">
                   <a 
@@ -26,12 +25,15 @@ const ImageGallery = ({ namePage }) => {
                   </a>
                 </h3>
               ) : (
-                <img 
-                src={url.url} 
-                alt={url.alt} 
-                title={url.title} 
-                
-                  />
+                <a  href={url.url} rel="noopener noreferrer" target="_blank">
+
+                  <img 
+                  src={url.url} 
+                  alt={url.alt} 
+                  title={url.title} 
+                  
+                    />
+                </a>
                   )}
             </div>
           ))}

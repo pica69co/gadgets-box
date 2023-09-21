@@ -291,6 +291,13 @@ export const storm = [
             },
             {
                 
+                url:'http://tropic.ssec.wisc.edu/real-time/mimic-tpw/global/anim/latest72hrs.gif',
+                desc:'Total precipitable water in the world',
+                title:'Total precipitable water in the world',
+                alt:'global',
+            },
+            {
+                
                 url:'http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_update/gsstanim.gif',
                 desc:'Sea surface temperatures and anomalies (animation)',
                 title:'Sea surface temperatures and anomalies (animation)',
@@ -303,13 +310,7 @@ export const storm = [
                 title:'Sea surface temperatures and anomalies (celsius) ',
                 alt:'anomalies',
             },
-            {
-                
-                url:'http://tropic.ssec.wisc.edu/real-time/mimic-tpw/global/anim/latest72hrs.gif',
-                desc:'Total precipitable water in the world',
-                title:'Total precipitable water in the world',
-                alt:'global',
-            },
+            
             
         ],
         description:'',
