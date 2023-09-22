@@ -1,5 +1,6 @@
 import React from "react";
 import { storm } from './storm'
+import hurricane from '../../assets/images/hurricane.png'
 import "./Storm.css";
 
 const Storm = () => {
@@ -11,7 +12,7 @@ const Storm = () => {
         <h3><strong>The hurricane season</strong> in the Atlantic extends from June 1-Nov 30 and in the Eastern Pacific from May 15-Nov 30.          
         </h3>
         </div>
-           <img src='https://cdn.star.nesdis.noaa.gov/GOES16/ABI/GIFS/GOES16-CAR-02-1000x1000.gif' alt='background' width={300} height={180} />
+           <img src={hurricane} alt='storm' width={300} height={180} />
         <div className="tabs section" id="crosscol-overflow">
           <div className="widget PageList" >
             <h2>Pages</h2>
