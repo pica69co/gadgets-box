@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FetchWebcams, FetchWebcamsById } from '../webcams'
 import VideoPlayer from '../../../components/VideoPlayer/VideoPlayer'
+import '../Storm.css'
 
 const Webcams = () => {
   const [webcams, setWebcams] = useState(null)
@@ -19,6 +20,7 @@ const Webcams = () => {
   const handlerClick = (e) =>  {
     const webcamId = e.target.id  
     setLoading(true)
+    setModal(true)
     FetchWebcamsById(webcamId)
     .then((data) => {
       setCamDetails(data)
@@ -27,16 +29,15 @@ const Webcams = () => {
       console.log(error)
     })
     setLoading(false)
-    setModal(true)
   }
-  console.log(camDetails);
+  //console.log(camDetails);
    return ( 
 
     <div>
         <div className='head'><h1>Webcams</h1>
         </div>      
         {/*TODO: Modal */}
-          {/* {modal && (
+           {modal && (
             <VideoPlayer 
               camDetails={camDetails} 
               modal={modal} 
@@ -44,14 +45,14 @@ const Webcams = () => {
               loading={loading}
               setLoading={setLoading}
               />
-          )} */}
+          )}
         <div>
           { loading ? 'Loading...' :
           webcams?.webcams?.map((webcam, id) => (
-            <div key={id}>
+            <div key={id} className='webcams-list'>
               <h3>{webcam.title}</h3>
-              <h5>{webcam.status}</h5>
-              <button id={webcam.webcamId} onClick={handlerClick }>{webcam.webcamId}</button>
+              {/* <h5>{webcam.status}</h5> */}
+              <button className='button-getLink' id={webcam.webcamId} onClick={handlerClick }>Get Link</button>
             </div>
           ))}
           </div>

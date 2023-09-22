@@ -110,7 +110,7 @@ function App() {
           <Route path="/storm/world-maps" element={<WorldMaps />}></Route>
           <Route path="/storm/satellite-images" element={<Satellite />}></Route>
           <Route path="/storm/webcams" element={<Webcams />}></Route>
-          {/* <Route path="/storm/webcams/video-player" element={<VideoPlayer />}></Route> */}
+          <Route path="/storm/webcams/video-player" element={<VideoPlayer />}></Route>
         </Routes>
       </div>
     </Router>

@@ -1,29 +1,33 @@
-import React from 'react'
+import React from "react";
+import './VideoPlayer.css'
 
-const VideoPlayer = ({ 
-    camDetails,
-    modal, 
-    setModal,
-    loading,
-    setLoading,}) => {
-  
-console.log(camDetails);
+const VideoPlayer = ({ camDetails, modal, setModal, loading, setLoading }) => {
+  console.log("webcams details", camDetails);
 
-    return (
-      <div>
-        <h1>VideoPlayer</h1>
-        {camDetails.player?.map(detail => (
-            <div key={detail.webcamId}>
-                <h1>{detail.title}</h1>
-                <h5>{detail.status}</h5>
-                <video controls>
-                    <source src={detail.player.lifetime} type="video/mp4" />
-                </video>
-                <button onClick={() => setModal(false)}>Close</button>
-            </div>
-        ))}
-      </div>
-  )
-}
+  return (
+    <div className="videoPlayer-container">
+      <h1>VideoPlayer</h1>
 
-export default VideoPlayer
+      {camDetails === null ? (
+        "Loading..."
+      ) : (
+        <div className="video-player">
+          <div className="cam-detail">
+            <a 
+            className="link"
+            href={camDetails?.player.day} rel="noreferrer noopener">
+              {camDetails.title}{" "}
+            </a>
+          </div>
+          <button 
+          onClick={() => setModal(false)} className="button-modal"
+          >
+            Close
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default VideoPlayer;

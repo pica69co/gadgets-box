@@ -1,0 +1,38 @@
+.videoPlayer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+}
+.video-player{
+    
+}
+.cam-detail{
+    
+}
+.cam-detail{
+    
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    color: black;
+    background: #f5f5f5;
+    padding: 1.5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 1px black;
+    box-shadow: 0px 5px 1px black;
+}
+.button-modal{
+    background-color: #1e88e5;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 5px;
+}
