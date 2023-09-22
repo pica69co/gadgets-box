@@ -67,4 +67,9 @@ export const routesPath = [
     path: "/time",
     name: "Time",
   },
+  {
+    path:"/world-radar",
+    name: "WorldRadar",
+    url:"https://www.flightradar24.com/9.63,-75.96/5"
+  }
 ];
