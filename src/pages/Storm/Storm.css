@@ -1,13 +1,11 @@
 .body {
   font: normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
   color: #000000;
-  background: #18181840 none repeat scroll top left;
   padding: 0 40px 40px 40px;
 }
 .atlantic-title {
   font-size: 1.35rem;
   font-weight: bold;
-
   padding: 8px;
   margin: 5px;
 }
@@ -54,16 +52,25 @@
 .list-item h1 {
   font-size: 1rem;
 }
-.webcams-list{
 
+/* Webcams */
+.webcams-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.webcams-list h3{
+ font-size: 14px;
 }
 .button-getLink{
   background-color: #1e88e5;
   color: white;
-  padding: 5px 5px;
+  padding: 4px 4px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  font-size: 12px;
-  margin: 3px;
+  font-size: 10px;
+  margin: 2px;
 }

@@ -8,7 +8,7 @@ const Home = () => {
         <div className='container-home'>
             { Links.map((link, index) => (
             <div key={index} className='link-container'>
-            <Link to={link.path} className='link'><h3 >{link.name} </h3></Link>
+            <Link to={link.path} className='home-link'><h3 >{link.name} </h3></Link>
             </div>
             )) 
             }
