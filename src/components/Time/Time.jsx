@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { convertTimeTo12HourFormat, langs } from "./utils";
+import { motion } from 'framer-motion'
 import AnalogClock from "./Clock/AnalogClock";
 
 import "./Clock/Time.css";
@@ -47,7 +48,11 @@ function Time() {
   };
 
   return (
-    <div>
+    <motion.div 
+    initial={{width:0}}
+    animate={{width:'100%'}}
+    exit={{x:window.innerWidth, transition:{duration:0.1}}}
+    >
       {/* <h2>{time12}</h2> */}
       <div>
         <h1
@@ -92,7 +97,7 @@ function Time() {
         ))}
       </div>
       <h5>&copy;Oscar Warrieta</h5>
-    </div>
+    </motion.div>
   );
 }
 

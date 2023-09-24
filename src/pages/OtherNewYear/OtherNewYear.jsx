@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import './OtherNewYear.css'
-
+import { motion } from "framer-motion";
+import "./OtherNewYear.css";
 
 const CountdownTimer = () => {
   const christmasDate = new Date("December 25, 2023 00:00:00").getTime();
   const newYearDate = new Date("January 1, 2024 00:00:00").getTime();
   const year = new Date().getFullYear();
-  const month = new Date().getUTCMonth()+1;
+  const month = new Date().getUTCMonth() + 1;
   const day = new Date().getDate();
 
   const [timeRemaining, setTimeRemaining] = useState({
@@ -48,56 +48,59 @@ const CountdownTimer = () => {
     };
   }, []);
 
-  
   return (
-    <div className="countdown-timer">
+    <motion.div
+      className="countdown-timer"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    >
       <div className="christmas">
-
-      {timeRemaining.days > 0 && (
-        <div className="time-unit">
-          <h1>Count Down Christmas 2023!</h1>
-          <span className="value">{timeRemaining.days}</span>
-          <span className="label">{' '} Days</span>
-        </div>
-      )}
-      <div className="time-unit">
-        <span className="value">{timeRemaining.hours}</span>
-        <span className="label">{' '} Hours</span>
-      </div>
-      <div className="time-unit">
-        <span className="value">{timeRemaining.minutes}</span>
-        <span className="label">{' '} Minutes</span>
-      </div>
-      <div className="time-unit">
-        <span className="value">{timeRemaining.seconds}</span>
-        <span className="label">{' '} Seconds</span>
-      </div>
-      </div>
-      <div className="year">
-
-      { timeRemainingYear.days > 0 && ( 
-      <div className="time-unit">
-        <h1>Happy New Year 2024!</h1>
         {timeRemaining.days > 0 && (
           <div className="time-unit">
-            <span className="value">{timeRemainingYear.days}</span>
-            <span className="label">{' '} Days</span>
+            <h1>Count Down Christmas 2023!</h1>
+            <span className="value">{timeRemaining.days}</span>
+            <span className="label"> Days</span>
           </div>
         )}
         <div className="time-unit">
-          <span className="value">{timeRemainingYear.hours}</span>
-          <span className="label">{' '} Hours</span>
+          <span className="value">{timeRemaining.hours}</span>
+          <span className="label"> Hours</span>
         </div>
         <div className="time-unit">
-          <span className="value">{timeRemainingYear.minutes}</span>
-          <span className="label">{' '} Minutes</span>
+          <span className="value">{timeRemaining.minutes}</span>
+          <span className="label"> Minutes</span>
         </div>
-        <span className="value">{timeRemainingYear.seconds}</span>
-        <span className="label">{' '} Seconds</span>
-      </div>)}
+        <div className="time-unit">
+          <span className="value">{timeRemaining.seconds}</span>
+          <span className="label"> Seconds</span>
+        </div>
       </div>
-       <p>&copy;Oscar Warrieta {' '}{`${year}/${month}/${day}`}</p>     
-    </div>
+      <div className="year">
+        {timeRemainingYear.days > 0 && (
+          <div className="time-unit">
+            <h1>Happy New Year 2024!</h1>
+            {timeRemaining.days > 0 && (
+              <div className="time-unit">
+                <span className="value">{timeRemainingYear.days}</span>
+                <span className="label"> Days</span>
+              </div>
+            )}
+            <div className="time-unit">
+              <span className="value">{timeRemainingYear.hours}</span>
+              <span className="label"> Hours</span>
+            </div>
+            <div className="time-unit">
+              <span className="value">{timeRemainingYear.minutes}</span>
+              <span className="label"> Minutes</span>
+            </div>
+            <span className="value">{timeRemainingYear.seconds}</span>
+            <span className="label"> Seconds</span>
+          </div>
+        )}
+      </div>
+      <p>&copy;Oscar Warrieta {`${year}/${month}/${day}`}</p>
+    </motion.div>
   );
 };
 

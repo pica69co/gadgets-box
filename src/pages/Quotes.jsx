@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import xIcon from "../assets/images/twitter-x-icon.png";
 
 const Quotes = () => {
@@ -54,7 +55,12 @@ const Quotes = () => {
   };
   console.log("copy:", copied);
   return (
-    <div className="quote-box">
+    <motion.div
+      className="quote-box"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    >
       <h2>Quote of the day</h2>
       <blockquote>{quote}</blockquote>
       <span>{author}</span>
@@ -80,7 +86,7 @@ const Quotes = () => {
           <i className="fas fa-volume-up sound"></i>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

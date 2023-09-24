@@ -1,47 +1,39 @@
-import "./App.css";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import AnimateRoutes from "./components/AnimateRoutes";
-// import { AnimatePresence } from "framer-motion"
+import React from 'react'
+import { Route, Routes, useLocation } from "react-router-dom"
+import { AnimatePresence } from "framer-motion"
 
-// import OtherNewYear from "./pages/OtherNewYear/OtherNewYear.jsx";
-// import MusicPlayer from "./pages/MusicPlayer/MusicPlayer";
-// import Quotes from "./pages/Quotes";
-// import Weather from "./pages/Weather";
-// import Home from "./pages/Home/Home";
-// import PocketGames from "./pages/PocketGames/PocketGames";
-// import Game2048 from "./components/Game2048/Game2048";
-// import TicTac from "./components/Tic-Tac/Tic-Tac";
-// import MemoryGame from "./components/MemoryGame/MemoryGame";
-// import Tetris from "./components/Tetris/Tetris";
-// import PocketWikis from "./pages/Home/PocketWikis/PocketWikis";
-// import VideoGames from "./pages/wikis/VideoGames/VideoGames";
-// import Movies from "./pages/wikis/Movies/Movies";
-// import Countries from "./pages/wikis/Countries/Countries";
-// import Dogs from "./pages/wikis/Dogs/Dogs";
-// import PokemonWiki from "./pages/wikis/PokemonWiki/PokemonWiki";
-// import Time from "./components/Time/Time";
-// import Storm from "./pages/Storm/Storm";
-// import Interactive from "./pages/Storm/Views/Interactive";
-// import ActiveStorms from "./pages/Storm/Views/ActiveStorms";
-// import Atlantic from "./pages/Storm/Views/Atlantic";
-// import Pacific from "./pages/Storm/Views/Pacific";
-// import Central from "./pages/Storm/Views/Central";
-// import Caribean from "./pages/Storm/Views/Caribean";
-// import WorldMaps from "./pages/Storm/Views/WorldMaps";
-// import Satellite from "./pages/Storm/Views/Satellite";
-// import Webcams from "./pages/Storm/Views/Webcams";
-
-function App() {
+import OtherNewYear from "../pages/OtherNewYear/OtherNewYear";
+import MusicPlayer from "../pages/MusicPlayer/MusicPlayer";
+import Quotes from "../pages/Quotes";
+import Weather from "../pages/Weather";
+import Home from "../pages/Home/Home";
+import PocketGames from "../pages/PocketGames/PocketGames";
+import Game2048 from "./Game2048/Game2048";
+import TicTac from "./Tic-Tac/Tic-Tac";
+import MemoryGame from "./MemoryGame/MemoryGame";
+import Tetris from "./Tetris/Tetris";
+import PocketWikis from "../pages/Home/PocketWikis/PocketWikis";
+import VideoGames from "../pages/wikis/VideoGames/VideoGames";
+import Movies from "../pages/wikis/Movies/Movies";
+import Countries from "../pages/wikis/Countries/Countries";
+import Dogs from "../pages/wikis/Dogs/Dogs";
+import PokemonWiki from "../pages/wikis/PokemonWiki/PokemonWiki";
+import Time from "../components/Time/Time";
+import Storm from "../pages/Storm/Storm";
+import Interactive from "../pages/Storm/Views/Interactive";
+import ActiveStorms from "../pages/Storm/Views/ActiveStorms";
+import Atlantic from "../pages/Storm/Views/Atlantic";
+import Pacific from "../pages/Storm/Views/Pacific";
+import Central from "../pages/Storm/Views/Central";
+import Caribean from "../pages/Storm/Views/Caribean";
+import WorldMaps from "../pages/Storm/Views/WorldMaps";
+import Satellite from "../pages/Storm/Views/Satellite";
+import Webcams from "../pages/Storm/Views/Webcams";
+const AnimateRoutes = () => {
+    const location = useLocation()
   return (
-    <Router>
-      <div className="App">
-        <div className="title-nav">
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <h1>Widgets-Box</h1>
-          </Link>
-        </div>
-
-        {/* <Routes >
+    <AnimatePresence>
+      <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />}>
             {" "}
           </Route>
@@ -112,11 +104,9 @@ function App() {
           <Route path="/storm/satellite-images" element={<Satellite />}></Route>
           <Route path="/storm/webcams" element={<Webcams />}></Route>
           {/* <Route path="/storm/webcams/video-player" element={<VideoPlayer />}></Route> */}
-        {/* </Routes> */}
-        <AnimateRoutes />
-      </div>
-    </Router>
-  );
+      </Routes>
+    </AnimatePresence>
+  )
 }
 
-export default App;
+export default AnimateRoutes

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import wikis from "./dataWikis";
 import Background from "../../../components/MemoryGame/Background";
 
@@ -8,7 +9,11 @@ const PocketWikis = () => {
   };
 
   return (
-    <div>
+    <motion.div 
+    initial={{width:0}}
+    animate={{width:'100%'}}
+    exit={{x:window.innerWidth, transition:{duration:0.1}}}
+    >
       <div className="title">
         <h1>PocketWikis</h1>
       </div>
@@ -26,7 +31,7 @@ const PocketWikis = () => {
         ))}
       </div>
     <Background/>
-    </div>
+    </motion.div>
   );
 };
 export default PocketWikis

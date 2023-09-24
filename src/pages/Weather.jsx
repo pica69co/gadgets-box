@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 import style from "../components/Weather.module.css";
 import search from "../assets/images/search.png";
@@ -74,7 +75,12 @@ const Weather = () => {
   };
 
   return (
-    <div className={style.container}>
+    <motion.div
+      className={style.container}
+      initial={{ width: 0 }}
+      animate={{ width: window.innerWidth }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    >
       <div className={style.card}>
         <div className={style.search}>
           <input
@@ -145,14 +151,13 @@ const Weather = () => {
           </div>
         )}
       </div>
-      
+
       <div className="daily">
-      {detail.city && forecast && !error && (
-        <Forecast data={forecast} loading={loading} />
-      )}
-      </div>       
-      
-    </div>
+        {detail.city && forecast && !error && (
+          <Forecast data={forecast} loading={loading} />
+        )}
+      </div>
+    </motion.div>
   );
 };
 
