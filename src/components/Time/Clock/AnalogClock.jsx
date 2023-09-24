@@ -12,6 +12,15 @@ function AnalogClock({time}) {
   return (
     <div className="analog-clock">
       <div className="clock-face">
+      <div class="numbers">
+        <ul>
+          <li>12</li>
+          <li>3</li>
+          <li>6</li>
+          <li>9</li>
+        </ul>
+      </div>
+           
         <div
           className="clock-hand hour-hand"
           style={{ transform: `rotate(${hourDeg}deg)` }}
