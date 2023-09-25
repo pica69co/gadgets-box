@@ -20,7 +20,7 @@
       left: 50%;
       z-index: 1;
       transform: translate(-50%, -50%);
-      background: linear-gradient(left, #f3f3f3, #fff);
+      background: linear-gradient(to left, #f3f3f3, #fff);
       box-shadow: -2px 3px 3px rgba(0,0,0,0.2), inset 1px 0 6px rgba(0,0,0,0.2);
     }
       
@@ -141,7 +141,7 @@
     text-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722, 0 0 30px #ff5722,
       0 0 40px #ff5722, 0 0 50px #ff572250, 0 0 60px #ff5722, 0 0 70px #ff572250,
       0 0 80px #ff572250;
-      background: linear-gradient(left, #f3f3f3, #fff);
+      background: linear-gradient(to right, #f3f3f3, #fff);
       box-shadow: -2px 3px 3px rgba(0,0,0,0.2), inset 1px 0 16px rgba(0,0,0,0.2);  
   }
   .utc{
