@@ -17,6 +17,7 @@ export const musicAPI = [
       src: "https://www.bensound.com/bensound-music/bensound-memories.mp3",
       songAvatar:'',
     },
+    
     {
       name: "Creative Minds",
       songArtist: '',
@@ -73,10 +74,14 @@ export const musicAPI = [
       src: "https://www.bensound.com/bensound-music/bensound-dreams.mp3"
     },
     {
-      name: "A Day To Remember",
+      name: "Summer",
       songArtist: '',
-      src:
-        "https://www.bensound.com/royalty-free-music/track/a-day-to-remember-wedding-music"
+      src: "https://www.bensound.com/bensound-music/bensound-summer.mp3"
+    },
+    {
+      name: "Dance",
+      songArtist: '',
+      src: "https://www.bensound.com/bensound-music/bensound-dance.mp3"
     },
     {
       name: "Adventure",
