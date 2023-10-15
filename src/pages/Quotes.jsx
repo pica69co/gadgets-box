@@ -53,12 +53,12 @@ const Quotes = () => {
 
     setTimeout(() => setCopied(false), 5000);
   };
-  console.log("copy:", copied);
+  // console.log("copy:", copied);
   return (
     <motion.div
       className="quote-box"
       initial={{ width: 0 }}
-      animate={{ width: "100%" }}
+      animate={{ width: "60%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
     >
       <h2>Quote of the day</h2>

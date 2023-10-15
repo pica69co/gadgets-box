@@ -3,18 +3,18 @@ export const routesPath = [
     path: "/",
     name: "Home",
   },
-  {
-    path: "/weather",
-    name: "Weather",
-  },
+  // {
+  //   path: "/weather",
+  //   name: "Weather",
+  // },
   {
     path: "/quotes",
     name: "Quotes",
   },
-  {
-    path: "/music",
-    name: "MusicPlayer",
-  },
+  // {
+  //   path: "/music",
+  //   name: "MusicPlayer",
+  // },
   {
     path: "/countdown",
     name: "OtherNewYear",

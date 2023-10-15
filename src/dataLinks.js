@@ -3,10 +3,10 @@ export const Links = [
     name: "Random Daily Quotes",
     path: "/quotes",
   },
-  {
-    name: "Music Player",
-    path: "/music",
-  },
+  // {
+  //   name: "Music Player",
+  //   path: "/music",
+  // },
   {
     name: "Count Down [ Christmas & New Year ]",
     path: "/countdown",
@@ -19,10 +19,10 @@ export const Links = [
     name: "Pocket Wikis",
     path: "/wikis",
   },
-  {
-    name: "Weather",
-    path: "/weather",
-  },
+  // {
+  //   name: "Weather",
+  //   path: "/weather",
+  // },
   {
     name: "Seismic-Tracking",
     path: "https://seismic-tracking.vercel.app/",
