@@ -82,9 +82,9 @@ const Quotes = () => {
             }
           ></i>
         </button>
-        <button onClick={handlerSound} className="sound">
+        {/* <button onClick={handlerSound} className="sound">
           <i className="fas fa-volume-up sound"></i>
-        </button>
+        </button> */}
       </div>
     </motion.div>
   );

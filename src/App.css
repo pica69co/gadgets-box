@@ -92,7 +92,7 @@
   color: #333;
 }
 
-@media screen and (max-width: 990px) {
+@media only screen and (max-width: 990px) {
   .quote-box {
     width: 300px;
   }
@@ -102,6 +102,7 @@
   .quote-box .blockquote::before {
     font-size: 10px;
   }
+
   .quote-box h2 {
     font-size: 5vmin;
   }
@@ -115,6 +116,9 @@
   }
   /** To Do:  meanwhile fix error to copy text */
   .quote-box button:nth-child(3) {
+    display: none;
+  }
+  button {
     display: none;
   }
 }
