@@ -3,6 +3,7 @@
   color: #000000;
   padding: 0 40px 40px 40px;
 }
+
 .atlantic-title {
   font-size: 1.35rem;
   font-weight: bold;
@@ -54,17 +55,17 @@
 }
 
 /* Webcams */
-.webcams-list{
+.webcams-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.webcams-list h3{
- font-size: 14px;
+.webcams-list h3 {
+  font-size: 14px;
 }
-.button-getLink{
+.button-getLink {
   background-color: #1e88e5;
   color: white;
   padding: 4px 4px;

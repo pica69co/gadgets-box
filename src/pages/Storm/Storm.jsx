@@ -9,7 +9,7 @@ const Storm = () => {
     <motion.div
       className="body"
       initial={{ width: 0 }}
-      animate={{ width: "100%" }}
+      animate={{ width: "90%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
     >
       <div className="head">
