@@ -118,7 +118,7 @@
   .quote-box button:nth-child(3) {
     display: none;
   }
-  button {
+  /* button {
     display: none;
-  }
+  } */
 }

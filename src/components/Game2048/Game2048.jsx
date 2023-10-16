@@ -340,7 +340,7 @@ const Game2048 = () => {
               fontWeight: "700",
               fontSize: 50,
               color: "orange",
-              background:"#776E6515"
+              background: "#776E6515",
             }}
           >
             2048
@@ -377,7 +377,7 @@ const Game2048 = () => {
                     fontFamily: "sans-serif",
                     fontWeight: "900",
                     color: "red",
-                    background:"#776E6575"
+                    background: "#776E6575",
                   }}
                 >
                   Game Over!
