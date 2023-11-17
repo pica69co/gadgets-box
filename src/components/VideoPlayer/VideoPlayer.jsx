@@ -7,7 +7,7 @@ const VideoPlayer = ({ camDetails, modal, setModal, loading, setLoading }) => {
     <div className="videoPlayer-container">
       <h1>VideoPlayer</h1>
 
-      {!camDetails || camDetails === undefined ? (
+      {camDetails === undefined ? (
         "Loading..."
       ) : (
         <div className="video-player">
