@@ -52,6 +52,10 @@ export const routesPath = [
     name: "Movies",
   },
   {
+    path: "/anime",
+    name: "Anime",
+  },
+  {
     path: "/countries",
     name: "Countries",
   },

@@ -13,6 +13,14 @@ const Games = [
     repoUrl: "",
     videoUrl: "",
   },
+  //
+  {
+    name: "Anime [ ANIME VAULT ]",
+    url: "https://anime-vault-bice.vercel.app/",
+    imageUrl: "",
+    repoUrl: "",
+    videoUrl: "",
+  },
   {
     name: "Video Games",
     url: "/video-games",
