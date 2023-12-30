@@ -15,10 +15,10 @@ export const routesPath = [
   //   path: "/music",
   //   name: "MusicPlayer",
   // },
-  {
-    path: "/countdown",
-    name: "OtherNewYear",
-  },
+  // {
+  //   path: "/countdown",
+  //   name: "OtherNewYear",
+  // },
   {
     path: "/games",
     name: "PocketGames",
